@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/ex_2.dir/glad.c.o CMakeFiles/ex_2.dir/main.cpp.o  -o ex_2  -lglfw -lGL -lm -lXrandr -lXi -lX11 -lXxf86vm -lpthread -ldl -lXinerama -lXcursor 

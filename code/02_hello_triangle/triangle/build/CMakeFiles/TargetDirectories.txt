@@ -1,0 +1,3 @@
+/home/wenboji/OpenGL_Notebook/code/02_hello_triangle/triangle/build/CMakeFiles/rebuild_cache.dir
+/home/wenboji/OpenGL_Notebook/code/02_hello_triangle/triangle/build/CMakeFiles/edit_cache.dir
+/home/wenboji/OpenGL_Notebook/code/02_hello_triangle/triangle/build/CMakeFiles/hello_triangle.dir
