@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/OpenGl_01.dir/01_hello_window/main.cpp.o CMakeFiles/OpenGl_01.dir/glad.c.o  -o OpenGl_01  -lglfw -lGL -lm -lXrandr -lXi -lX11 -lXxf86vm -lpthread -ldl -lXinerama -lXcursor 

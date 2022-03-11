@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/hello_triangle.dir/glad.c.o CMakeFiles/hello_triangle.dir/main.cpp.o  -o hello_triangle  -lglfw -lGL -lm -lXrandr -lXi -lX11 -lXxf86vm -lpthread -ldl -lXinerama -lXcursor 

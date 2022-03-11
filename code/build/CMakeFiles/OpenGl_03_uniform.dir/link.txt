@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/OpenGl_03_uniform.dir/03_shader/uniform/main.cpp.o CMakeFiles/OpenGl_03_uniform.dir/glad.c.o  -o OpenGl_03_uniform  -lglfw -lGL -lm -lXrandr -lXi -lX11 -lXxf86vm -lpthread -ldl -lXinerama -lXcursor 

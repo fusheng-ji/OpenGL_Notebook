@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/OpenGl_02_rectangle.dir/02_hello_triangle/rectangle/main.cpp.o CMakeFiles/OpenGl_02_rectangle.dir/glad.c.o  -o OpenGl_02_rectangle  -lglfw -lGL -lm -lXrandr -lXi -lX11 -lXxf86vm -lpthread -ldl -lXinerama -lXcursor 

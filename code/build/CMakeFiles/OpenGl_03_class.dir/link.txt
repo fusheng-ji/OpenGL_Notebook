@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/OpenGl_03_class.dir/03_shader/shader_class/main.cpp.o CMakeFiles/OpenGl_03_class.dir/glad.c.o  -o OpenGl_03_class  -lglfw -lGL -lm -lXrandr -lXi -lX11 -lXxf86vm -lpthread -ldl -lXinerama -lXcursor 

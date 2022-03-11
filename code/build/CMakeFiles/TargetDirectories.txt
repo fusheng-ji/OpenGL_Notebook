@@ -1,0 +1,12 @@
+/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles/rebuild_cache.dir
+/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles/edit_cache.dir
+/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles/OpenGl_03_Ins_outs.dir
+/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles/OpenGl_02_ex_3.dir
+/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles/OpenGl_03_class.dir
+/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles/OpenGl_02_ex_2.dir
+/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles/OpenGl_03_interpolation.dir
+/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles/OpenGl_02_ex_1.dir
+/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles/OpenGl_03_uniform.dir
+/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles/OpenGl_02_rectangle.dir
+/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles/OpenGl_02_triangle.dir
+/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles/OpenGl_01.dir

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wenboji/OpenGL_Notebook/code/03_shader/rainbow/main.cpp
+glad/glad.h
+-
+GLFW/glfw3.h
+-
+cmath
+-
+iostream
+-
+
