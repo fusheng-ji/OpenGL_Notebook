@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/OpenGl_04_generate_texture.dir/04_texture/generate_texture/main.cpp.o CMakeFiles/OpenGl_04_generate_texture.dir/glad.c.o  -o OpenGl_04_generate_texture  -lglfw -lGL -lm -lXrandr -lXi -lX11 -lXxf86vm -lpthread -ldl -lXinerama -lXcursor 

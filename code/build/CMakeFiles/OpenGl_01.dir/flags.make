@@ -9,7 +9,7 @@ C_DEFINES =
 
 C_INCLUDES = 
 
-CXX_FLAGS =   -std=gnu++14
+CXX_FLAGS =   -std=gnu++17
 
 CXX_DEFINES = 
 

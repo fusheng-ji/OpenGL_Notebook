@@ -111,108 +111,82 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named OpenGl_03_Ins_outs
+# Target rules for targets named OpenGl_04_ex_3
 
 # Build rule for target.
-OpenGl_03_Ins_outs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_Ins_outs
-.PHONY : OpenGl_03_Ins_outs
+OpenGl_04_ex_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_ex_3
+.PHONY : OpenGl_04_ex_3
 
 # fast build rule for target.
-OpenGl_03_Ins_outs/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_03_Ins_outs.dir/build.make CMakeFiles/OpenGl_03_Ins_outs.dir/build
-.PHONY : OpenGl_03_Ins_outs/fast
+OpenGl_04_ex_3/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/build
+.PHONY : OpenGl_04_ex_3/fast
 
 #=============================================================================
-# Target rules for targets named OpenGl_02_ex_3
+# Target rules for targets named OpenGl_04_ex_2
 
 # Build rule for target.
-OpenGl_02_ex_3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_ex_3
-.PHONY : OpenGl_02_ex_3
+OpenGl_04_ex_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_ex_2
+.PHONY : OpenGl_04_ex_2
 
 # fast build rule for target.
-OpenGl_02_ex_3/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/build
-.PHONY : OpenGl_02_ex_3/fast
+OpenGl_04_ex_2/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/build
+.PHONY : OpenGl_04_ex_2/fast
 
 #=============================================================================
-# Target rules for targets named OpenGl_03_class
+# Target rules for targets named OpenGl_04_mix_color
 
 # Build rule for target.
-OpenGl_03_class: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_class
-.PHONY : OpenGl_03_class
+OpenGl_04_mix_color: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_mix_color
+.PHONY : OpenGl_04_mix_color
 
 # fast build rule for target.
-OpenGl_03_class/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/build
-.PHONY : OpenGl_03_class/fast
+OpenGl_04_mix_color/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/build
+.PHONY : OpenGl_04_mix_color/fast
 
 #=============================================================================
-# Target rules for targets named OpenGl_02_ex_2
+# Target rules for targets named OpenGl_04_ex_4
 
 # Build rule for target.
-OpenGl_02_ex_2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_ex_2
-.PHONY : OpenGl_02_ex_2
+OpenGl_04_ex_4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_ex_4
+.PHONY : OpenGl_04_ex_4
 
 # fast build rule for target.
-OpenGl_02_ex_2/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/build
-.PHONY : OpenGl_02_ex_2/fast
+OpenGl_04_ex_4/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/build
+.PHONY : OpenGl_04_ex_4/fast
 
 #=============================================================================
-# Target rules for targets named OpenGl_03_interpolation
+# Target rules for targets named OpenGl_01
 
 # Build rule for target.
-OpenGl_03_interpolation: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_interpolation
-.PHONY : OpenGl_03_interpolation
+OpenGl_01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_01
+.PHONY : OpenGl_01
 
 # fast build rule for target.
-OpenGl_03_interpolation/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/build
-.PHONY : OpenGl_03_interpolation/fast
+OpenGl_01/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/build
+.PHONY : OpenGl_01/fast
 
 #=============================================================================
-# Target rules for targets named OpenGl_02_ex_1
+# Target rules for targets named OpenGl_04_mix_texture
 
 # Build rule for target.
-OpenGl_02_ex_1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_ex_1
-.PHONY : OpenGl_02_ex_1
+OpenGl_04_mix_texture: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_mix_texture
+.PHONY : OpenGl_04_mix_texture
 
 # fast build rule for target.
-OpenGl_02_ex_1/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/build
-.PHONY : OpenGl_02_ex_1/fast
-
-#=============================================================================
-# Target rules for targets named OpenGl_03_uniform
-
-# Build rule for target.
-OpenGl_03_uniform: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_uniform
-.PHONY : OpenGl_03_uniform
-
-# fast build rule for target.
-OpenGl_03_uniform/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/build
-.PHONY : OpenGl_03_uniform/fast
-
-#=============================================================================
-# Target rules for targets named OpenGl_02_rectangle
-
-# Build rule for target.
-OpenGl_02_rectangle: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_rectangle
-.PHONY : OpenGl_02_rectangle
-
-# fast build rule for target.
-OpenGl_02_rectangle/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/build
-.PHONY : OpenGl_02_rectangle/fast
+OpenGl_04_mix_texture/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/build
+.PHONY : OpenGl_04_mix_texture/fast
 
 #=============================================================================
 # Target rules for targets named OpenGl_02_triangle
@@ -228,17 +202,173 @@ OpenGl_02_triangle/fast:
 .PHONY : OpenGl_02_triangle/fast
 
 #=============================================================================
-# Target rules for targets named OpenGl_01
+# Target rules for targets named OpenGl_02_rectangle
 
 # Build rule for target.
-OpenGl_01: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_01
-.PHONY : OpenGl_01
+OpenGl_02_rectangle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_rectangle
+.PHONY : OpenGl_02_rectangle
 
 # fast build rule for target.
-OpenGl_01/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/build
-.PHONY : OpenGl_01/fast
+OpenGl_02_rectangle/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/build
+.PHONY : OpenGl_02_rectangle/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_04_ex_1
+
+# Build rule for target.
+OpenGl_04_ex_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_ex_1
+.PHONY : OpenGl_04_ex_1
+
+# fast build rule for target.
+OpenGl_04_ex_1/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/build
+.PHONY : OpenGl_04_ex_1/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_03_uniform
+
+# Build rule for target.
+OpenGl_03_uniform: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_uniform
+.PHONY : OpenGl_03_uniform
+
+# fast build rule for target.
+OpenGl_03_uniform/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/build
+.PHONY : OpenGl_03_uniform/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_02_ex_1
+
+# Build rule for target.
+OpenGl_02_ex_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_ex_1
+.PHONY : OpenGl_02_ex_1
+
+# fast build rule for target.
+OpenGl_02_ex_1/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/build
+.PHONY : OpenGl_02_ex_1/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_03_interpolation
+
+# Build rule for target.
+OpenGl_03_interpolation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_interpolation
+.PHONY : OpenGl_03_interpolation
+
+# fast build rule for target.
+OpenGl_03_interpolation/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/build
+.PHONY : OpenGl_03_interpolation/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_02_ex_2
+
+# Build rule for target.
+OpenGl_02_ex_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_ex_2
+.PHONY : OpenGl_02_ex_2
+
+# fast build rule for target.
+OpenGl_02_ex_2/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/build
+.PHONY : OpenGl_02_ex_2/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_04_generate_texture
+
+# Build rule for target.
+OpenGl_04_generate_texture: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_generate_texture
+.PHONY : OpenGl_04_generate_texture
+
+# fast build rule for target.
+OpenGl_04_generate_texture/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/build
+.PHONY : OpenGl_04_generate_texture/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_03_class
+
+# Build rule for target.
+OpenGl_03_class: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_class
+.PHONY : OpenGl_03_class
+
+# fast build rule for target.
+OpenGl_03_class/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/build
+.PHONY : OpenGl_03_class/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_02_ex_3
+
+# Build rule for target.
+OpenGl_02_ex_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_ex_3
+.PHONY : OpenGl_02_ex_3
+
+# fast build rule for target.
+OpenGl_02_ex_3/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/build
+.PHONY : OpenGl_02_ex_3/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_03_Ins_outs
+
+# Build rule for target.
+OpenGl_03_Ins_outs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_Ins_outs
+.PHONY : OpenGl_03_Ins_outs
+
+# fast build rule for target.
+OpenGl_03_Ins_outs/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_03_Ins_outs.dir/build.make CMakeFiles/OpenGl_03_Ins_outs.dir/build
+.PHONY : OpenGl_03_Ins_outs/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_03_ex_1
+
+# Build rule for target.
+OpenGl_03_ex_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_ex_1
+.PHONY : OpenGl_03_ex_1
+
+# fast build rule for target.
+OpenGl_03_ex_1/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_1.dir/build.make CMakeFiles/OpenGl_03_ex_1.dir/build
+.PHONY : OpenGl_03_ex_1/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_03_ex_2
+
+# Build rule for target.
+OpenGl_03_ex_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_ex_2
+.PHONY : OpenGl_03_ex_2
+
+# fast build rule for target.
+OpenGl_03_ex_2/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_2.dir/build.make CMakeFiles/OpenGl_03_ex_2.dir/build
+.PHONY : OpenGl_03_ex_2/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_03_ex_3
+
+# Build rule for target.
+OpenGl_03_ex_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_ex_3
+.PHONY : OpenGl_03_ex_3
+
+# fast build rule for target.
+OpenGl_03_ex_3/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/build
+.PHONY : OpenGl_03_ex_3/fast
 
 01_hello_window/main.o: 01_hello_window/main.cpp.o
 
@@ -429,6 +559,87 @@ OpenGl_01/fast:
 	$(MAKE) -f CMakeFiles/OpenGl_03_Ins_outs.dir/build.make CMakeFiles/OpenGl_03_Ins_outs.dir/03_shader/Ins_outs/main.cpp.s
 .PHONY : 03_shader/Ins_outs/main.cpp.s
 
+03_shader/ex_1/main.o: 03_shader/ex_1/main.cpp.o
+
+.PHONY : 03_shader/ex_1/main.o
+
+# target to build an object file
+03_shader/ex_1/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_1.dir/build.make CMakeFiles/OpenGl_03_ex_1.dir/03_shader/ex_1/main.cpp.o
+.PHONY : 03_shader/ex_1/main.cpp.o
+
+03_shader/ex_1/main.i: 03_shader/ex_1/main.cpp.i
+
+.PHONY : 03_shader/ex_1/main.i
+
+# target to preprocess a source file
+03_shader/ex_1/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_1.dir/build.make CMakeFiles/OpenGl_03_ex_1.dir/03_shader/ex_1/main.cpp.i
+.PHONY : 03_shader/ex_1/main.cpp.i
+
+03_shader/ex_1/main.s: 03_shader/ex_1/main.cpp.s
+
+.PHONY : 03_shader/ex_1/main.s
+
+# target to generate assembly for a file
+03_shader/ex_1/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_1.dir/build.make CMakeFiles/OpenGl_03_ex_1.dir/03_shader/ex_1/main.cpp.s
+.PHONY : 03_shader/ex_1/main.cpp.s
+
+03_shader/ex_2/main.o: 03_shader/ex_2/main.cpp.o
+
+.PHONY : 03_shader/ex_2/main.o
+
+# target to build an object file
+03_shader/ex_2/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_2.dir/build.make CMakeFiles/OpenGl_03_ex_2.dir/03_shader/ex_2/main.cpp.o
+.PHONY : 03_shader/ex_2/main.cpp.o
+
+03_shader/ex_2/main.i: 03_shader/ex_2/main.cpp.i
+
+.PHONY : 03_shader/ex_2/main.i
+
+# target to preprocess a source file
+03_shader/ex_2/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_2.dir/build.make CMakeFiles/OpenGl_03_ex_2.dir/03_shader/ex_2/main.cpp.i
+.PHONY : 03_shader/ex_2/main.cpp.i
+
+03_shader/ex_2/main.s: 03_shader/ex_2/main.cpp.s
+
+.PHONY : 03_shader/ex_2/main.s
+
+# target to generate assembly for a file
+03_shader/ex_2/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_2.dir/build.make CMakeFiles/OpenGl_03_ex_2.dir/03_shader/ex_2/main.cpp.s
+.PHONY : 03_shader/ex_2/main.cpp.s
+
+03_shader/ex_3/main.o: 03_shader/ex_3/main.cpp.o
+
+.PHONY : 03_shader/ex_3/main.o
+
+# target to build an object file
+03_shader/ex_3/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/03_shader/ex_3/main.cpp.o
+.PHONY : 03_shader/ex_3/main.cpp.o
+
+03_shader/ex_3/main.i: 03_shader/ex_3/main.cpp.i
+
+.PHONY : 03_shader/ex_3/main.i
+
+# target to preprocess a source file
+03_shader/ex_3/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/03_shader/ex_3/main.cpp.i
+.PHONY : 03_shader/ex_3/main.cpp.i
+
+03_shader/ex_3/main.s: 03_shader/ex_3/main.cpp.s
+
+.PHONY : 03_shader/ex_3/main.s
+
+# target to generate assembly for a file
+03_shader/ex_3/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/03_shader/ex_3/main.cpp.s
+.PHONY : 03_shader/ex_3/main.cpp.s
+
 03_shader/interpolation/main.o: 03_shader/interpolation/main.cpp.o
 
 .PHONY : 03_shader/interpolation/main.o
@@ -510,22 +721,221 @@ OpenGl_01/fast:
 	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/03_shader/uniform/main.cpp.s
 .PHONY : 03_shader/uniform/main.cpp.s
 
+04_texture/ex_1/main.o: 04_texture/ex_1/main.cpp.o
+
+.PHONY : 04_texture/ex_1/main.o
+
+# target to build an object file
+04_texture/ex_1/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/04_texture/ex_1/main.cpp.o
+.PHONY : 04_texture/ex_1/main.cpp.o
+
+04_texture/ex_1/main.i: 04_texture/ex_1/main.cpp.i
+
+.PHONY : 04_texture/ex_1/main.i
+
+# target to preprocess a source file
+04_texture/ex_1/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/04_texture/ex_1/main.cpp.i
+.PHONY : 04_texture/ex_1/main.cpp.i
+
+04_texture/ex_1/main.s: 04_texture/ex_1/main.cpp.s
+
+.PHONY : 04_texture/ex_1/main.s
+
+# target to generate assembly for a file
+04_texture/ex_1/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/04_texture/ex_1/main.cpp.s
+.PHONY : 04_texture/ex_1/main.cpp.s
+
+04_texture/ex_2/main.o: 04_texture/ex_2/main.cpp.o
+
+.PHONY : 04_texture/ex_2/main.o
+
+# target to build an object file
+04_texture/ex_2/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/04_texture/ex_2/main.cpp.o
+.PHONY : 04_texture/ex_2/main.cpp.o
+
+04_texture/ex_2/main.i: 04_texture/ex_2/main.cpp.i
+
+.PHONY : 04_texture/ex_2/main.i
+
+# target to preprocess a source file
+04_texture/ex_2/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/04_texture/ex_2/main.cpp.i
+.PHONY : 04_texture/ex_2/main.cpp.i
+
+04_texture/ex_2/main.s: 04_texture/ex_2/main.cpp.s
+
+.PHONY : 04_texture/ex_2/main.s
+
+# target to generate assembly for a file
+04_texture/ex_2/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/04_texture/ex_2/main.cpp.s
+.PHONY : 04_texture/ex_2/main.cpp.s
+
+04_texture/ex_3/main.o: 04_texture/ex_3/main.cpp.o
+
+.PHONY : 04_texture/ex_3/main.o
+
+# target to build an object file
+04_texture/ex_3/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/04_texture/ex_3/main.cpp.o
+.PHONY : 04_texture/ex_3/main.cpp.o
+
+04_texture/ex_3/main.i: 04_texture/ex_3/main.cpp.i
+
+.PHONY : 04_texture/ex_3/main.i
+
+# target to preprocess a source file
+04_texture/ex_3/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/04_texture/ex_3/main.cpp.i
+.PHONY : 04_texture/ex_3/main.cpp.i
+
+04_texture/ex_3/main.s: 04_texture/ex_3/main.cpp.s
+
+.PHONY : 04_texture/ex_3/main.s
+
+# target to generate assembly for a file
+04_texture/ex_3/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/04_texture/ex_3/main.cpp.s
+.PHONY : 04_texture/ex_3/main.cpp.s
+
+04_texture/ex_4/main.o: 04_texture/ex_4/main.cpp.o
+
+.PHONY : 04_texture/ex_4/main.o
+
+# target to build an object file
+04_texture/ex_4/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/04_texture/ex_4/main.cpp.o
+.PHONY : 04_texture/ex_4/main.cpp.o
+
+04_texture/ex_4/main.i: 04_texture/ex_4/main.cpp.i
+
+.PHONY : 04_texture/ex_4/main.i
+
+# target to preprocess a source file
+04_texture/ex_4/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/04_texture/ex_4/main.cpp.i
+.PHONY : 04_texture/ex_4/main.cpp.i
+
+04_texture/ex_4/main.s: 04_texture/ex_4/main.cpp.s
+
+.PHONY : 04_texture/ex_4/main.s
+
+# target to generate assembly for a file
+04_texture/ex_4/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/04_texture/ex_4/main.cpp.s
+.PHONY : 04_texture/ex_4/main.cpp.s
+
+04_texture/generate_texture/main.o: 04_texture/generate_texture/main.cpp.o
+
+.PHONY : 04_texture/generate_texture/main.o
+
+# target to build an object file
+04_texture/generate_texture/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/04_texture/generate_texture/main.cpp.o
+.PHONY : 04_texture/generate_texture/main.cpp.o
+
+04_texture/generate_texture/main.i: 04_texture/generate_texture/main.cpp.i
+
+.PHONY : 04_texture/generate_texture/main.i
+
+# target to preprocess a source file
+04_texture/generate_texture/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/04_texture/generate_texture/main.cpp.i
+.PHONY : 04_texture/generate_texture/main.cpp.i
+
+04_texture/generate_texture/main.s: 04_texture/generate_texture/main.cpp.s
+
+.PHONY : 04_texture/generate_texture/main.s
+
+# target to generate assembly for a file
+04_texture/generate_texture/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/04_texture/generate_texture/main.cpp.s
+.PHONY : 04_texture/generate_texture/main.cpp.s
+
+04_texture/mix_color/main.o: 04_texture/mix_color/main.cpp.o
+
+.PHONY : 04_texture/mix_color/main.o
+
+# target to build an object file
+04_texture/mix_color/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/04_texture/mix_color/main.cpp.o
+.PHONY : 04_texture/mix_color/main.cpp.o
+
+04_texture/mix_color/main.i: 04_texture/mix_color/main.cpp.i
+
+.PHONY : 04_texture/mix_color/main.i
+
+# target to preprocess a source file
+04_texture/mix_color/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/04_texture/mix_color/main.cpp.i
+.PHONY : 04_texture/mix_color/main.cpp.i
+
+04_texture/mix_color/main.s: 04_texture/mix_color/main.cpp.s
+
+.PHONY : 04_texture/mix_color/main.s
+
+# target to generate assembly for a file
+04_texture/mix_color/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/04_texture/mix_color/main.cpp.s
+.PHONY : 04_texture/mix_color/main.cpp.s
+
+04_texture/mix_texture/main.o: 04_texture/mix_texture/main.cpp.o
+
+.PHONY : 04_texture/mix_texture/main.o
+
+# target to build an object file
+04_texture/mix_texture/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/04_texture/mix_texture/main.cpp.o
+.PHONY : 04_texture/mix_texture/main.cpp.o
+
+04_texture/mix_texture/main.i: 04_texture/mix_texture/main.cpp.i
+
+.PHONY : 04_texture/mix_texture/main.i
+
+# target to preprocess a source file
+04_texture/mix_texture/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/04_texture/mix_texture/main.cpp.i
+.PHONY : 04_texture/mix_texture/main.cpp.i
+
+04_texture/mix_texture/main.s: 04_texture/mix_texture/main.cpp.s
+
+.PHONY : 04_texture/mix_texture/main.s
+
+# target to generate assembly for a file
+04_texture/mix_texture/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/04_texture/mix_texture/main.cpp.s
+.PHONY : 04_texture/mix_texture/main.cpp.s
+
 glad.o: glad.c.o
 
 .PHONY : glad.o
 
 # target to build an object file
 glad.c.o:
-	$(MAKE) -f CMakeFiles/OpenGl_03_Ins_outs.dir/build.make CMakeFiles/OpenGl_03_Ins_outs.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/glad.c.o
 	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_03_Ins_outs.dir/build.make CMakeFiles/OpenGl_03_Ins_outs.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_1.dir/build.make CMakeFiles/OpenGl_03_ex_1.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_2.dir/build.make CMakeFiles/OpenGl_03_ex_2.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/glad.c.o
 .PHONY : glad.c.o
 
 glad.i: glad.c.i
@@ -534,16 +944,26 @@ glad.i: glad.c.i
 
 # target to preprocess a source file
 glad.c.i:
-	$(MAKE) -f CMakeFiles/OpenGl_03_Ins_outs.dir/build.make CMakeFiles/OpenGl_03_Ins_outs.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/glad.c.i
 	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_03_Ins_outs.dir/build.make CMakeFiles/OpenGl_03_Ins_outs.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_1.dir/build.make CMakeFiles/OpenGl_03_ex_1.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_2.dir/build.make CMakeFiles/OpenGl_03_ex_2.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/glad.c.i
 .PHONY : glad.c.i
 
 glad.s: glad.c.s
@@ -552,16 +972,26 @@ glad.s: glad.c.s
 
 # target to generate assembly for a file
 glad.c.s:
-	$(MAKE) -f CMakeFiles/OpenGl_03_Ins_outs.dir/build.make CMakeFiles/OpenGl_03_Ins_outs.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/glad.c.s
 	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_03_Ins_outs.dir/build.make CMakeFiles/OpenGl_03_Ins_outs.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_1.dir/build.make CMakeFiles/OpenGl_03_ex_1.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_2.dir/build.make CMakeFiles/OpenGl_03_ex_2.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/glad.c.s
 .PHONY : glad.c.s
 
 # Help Target
@@ -572,16 +1002,26 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... OpenGl_03_Ins_outs"
-	@echo "... OpenGl_02_ex_3"
-	@echo "... OpenGl_03_class"
-	@echo "... OpenGl_02_ex_2"
-	@echo "... OpenGl_03_interpolation"
-	@echo "... OpenGl_02_ex_1"
-	@echo "... OpenGl_03_uniform"
-	@echo "... OpenGl_02_rectangle"
-	@echo "... OpenGl_02_triangle"
+	@echo "... OpenGl_04_ex_3"
+	@echo "... OpenGl_04_ex_2"
+	@echo "... OpenGl_04_mix_color"
+	@echo "... OpenGl_04_ex_4"
 	@echo "... OpenGl_01"
+	@echo "... OpenGl_04_mix_texture"
+	@echo "... OpenGl_02_triangle"
+	@echo "... OpenGl_02_rectangle"
+	@echo "... OpenGl_04_ex_1"
+	@echo "... OpenGl_03_uniform"
+	@echo "... OpenGl_02_ex_1"
+	@echo "... OpenGl_03_interpolation"
+	@echo "... OpenGl_02_ex_2"
+	@echo "... OpenGl_04_generate_texture"
+	@echo "... OpenGl_03_class"
+	@echo "... OpenGl_02_ex_3"
+	@echo "... OpenGl_03_Ins_outs"
+	@echo "... OpenGl_03_ex_1"
+	@echo "... OpenGl_03_ex_2"
+	@echo "... OpenGl_03_ex_3"
 	@echo "... 01_hello_window/main.o"
 	@echo "... 01_hello_window/main.i"
 	@echo "... 01_hello_window/main.s"
@@ -603,6 +1043,15 @@ help:
 	@echo "... 03_shader/Ins_outs/main.o"
 	@echo "... 03_shader/Ins_outs/main.i"
 	@echo "... 03_shader/Ins_outs/main.s"
+	@echo "... 03_shader/ex_1/main.o"
+	@echo "... 03_shader/ex_1/main.i"
+	@echo "... 03_shader/ex_1/main.s"
+	@echo "... 03_shader/ex_2/main.o"
+	@echo "... 03_shader/ex_2/main.i"
+	@echo "... 03_shader/ex_2/main.s"
+	@echo "... 03_shader/ex_3/main.o"
+	@echo "... 03_shader/ex_3/main.i"
+	@echo "... 03_shader/ex_3/main.s"
 	@echo "... 03_shader/interpolation/main.o"
 	@echo "... 03_shader/interpolation/main.i"
 	@echo "... 03_shader/interpolation/main.s"
@@ -612,6 +1061,27 @@ help:
 	@echo "... 03_shader/uniform/main.o"
 	@echo "... 03_shader/uniform/main.i"
 	@echo "... 03_shader/uniform/main.s"
+	@echo "... 04_texture/ex_1/main.o"
+	@echo "... 04_texture/ex_1/main.i"
+	@echo "... 04_texture/ex_1/main.s"
+	@echo "... 04_texture/ex_2/main.o"
+	@echo "... 04_texture/ex_2/main.i"
+	@echo "... 04_texture/ex_2/main.s"
+	@echo "... 04_texture/ex_3/main.o"
+	@echo "... 04_texture/ex_3/main.i"
+	@echo "... 04_texture/ex_3/main.s"
+	@echo "... 04_texture/ex_4/main.o"
+	@echo "... 04_texture/ex_4/main.i"
+	@echo "... 04_texture/ex_4/main.s"
+	@echo "... 04_texture/generate_texture/main.o"
+	@echo "... 04_texture/generate_texture/main.i"
+	@echo "... 04_texture/generate_texture/main.s"
+	@echo "... 04_texture/mix_color/main.o"
+	@echo "... 04_texture/mix_color/main.i"
+	@echo "... 04_texture/mix_color/main.s"
+	@echo "... 04_texture/mix_texture/main.o"
+	@echo "... 04_texture/mix_texture/main.i"
+	@echo "... 04_texture/mix_texture/main.s"
 	@echo "... glad.o"
 	@echo "... glad.i"
 	@echo "... glad.s"

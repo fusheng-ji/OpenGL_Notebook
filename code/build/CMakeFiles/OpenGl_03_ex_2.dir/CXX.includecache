@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/shader_s.h
+glad/glad.h
+-
+string
+-
+fstream
+-
+sstream
+-
+iostream
+-
+
+/home/wenboji/OpenGL_Notebook/code/03_shader/ex_2/main.cpp
+glad/glad.h
+-
+GLFW/glfw3.h
+-
+shader_s.h
+-
+
