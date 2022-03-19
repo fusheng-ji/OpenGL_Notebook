@@ -498,3 +498,316 @@ target_link_libraries(${PROJECT_NAME}_04_ex_4
 		-lXinerama
 		-lXcursor
 		)
+### 05_trans_rotate
+file(GLOB 05_trans_rotate
+		glad.c
+		05_trans/rotate/fragment.glsl
+		05_trans/rotate/vertex.glsl
+		05_trans/rotate/main.cpp)
+
+# add an executable with the above sources
+
+add_executable(${PROJECT_NAME}_05_rotate ${05_trans_rotate})
+target_include_directories(${PROJECT_NAME}_05_rotate
+		PRIVATE
+		${PROJECT_SOURCE_DIR}/include)
+target_link_libraries(${PROJECT_NAME}_05_rotate
+		-lglfw
+		-lGL
+		-lm
+		-lXrandr
+		-lXi
+		-lX11
+		-lXxf86vm
+		-lpthread
+		-ldl
+		-lXinerama
+		-lXcursor
+		)
+### 05_trans_rotate_with_time
+file(GLOB 05_trans_rotate_with_time
+		glad.c
+		05_trans/rotate_with_time/fragment.glsl
+		05_trans/rotate_with_time/vertex.glsl
+		05_trans/rotate_with_time/main.cpp)
+
+# add an executable with the above sources
+
+add_executable(${PROJECT_NAME}_05_rotate_with_time ${05_trans_rotate_with_time})
+target_include_directories(${PROJECT_NAME}_05_rotate_with_time
+		PRIVATE
+		${PROJECT_SOURCE_DIR}/include)
+target_link_libraries(${PROJECT_NAME}_05_rotate_with_time
+		-lglfw
+		-lGL
+		-lm
+		-lXrandr
+		-lXi
+		-lX11
+		-lXxf86vm
+		-lpthread
+		-ldl
+		-lXinerama
+		-lXcursor
+		)
+### 05_trans_ex_1
+file(GLOB 05_trans_ex_1
+		glad.c
+		05_trans/ex_1/fragment.glsl
+		05_trans/ex_1/vertex.glsl
+		05_trans/ex_1/main.cpp)
+
+# add an executable with the above sources
+
+add_executable(${PROJECT_NAME}_05_ex_1 ${05_trans_ex_1})
+target_include_directories(${PROJECT_NAME}_05_ex_1
+		PRIVATE
+		${PROJECT_SOURCE_DIR}/include)
+target_link_libraries(${PROJECT_NAME}_05_ex_1
+		-lglfw
+		-lGL
+		-lm
+		-lXrandr
+		-lXi
+		-lX11
+		-lXxf86vm
+		-lpthread
+		-ldl
+		-lXinerama
+		-lXcursor
+		)
+### 05_trans_ex_2
+file(GLOB 05_trans_ex_2
+		glad.c
+		05_trans/ex_2/fragment.glsl
+		05_trans/ex_2/vertex.glsl
+		05_trans/ex_2/main.cpp)
+
+# add an executable with the above sources
+
+add_executable(${PROJECT_NAME}_05_ex_2 ${05_trans_ex_2})
+target_include_directories(${PROJECT_NAME}_05_ex_2
+		PRIVATE
+		${PROJECT_SOURCE_DIR}/include)
+target_link_libraries(${PROJECT_NAME}_05_ex_2
+		-lglfw
+		-lGL
+		-lm
+		-lXrandr
+		-lXi
+		-lX11
+		-lXxf86vm
+		-lpthread
+		-ldl
+		-lXinerama
+		-lXcursor
+		)
+### 06_coor_go_3d
+file(GLOB 06_coor_go_3d
+		glad.c
+		06_coor/go_3d/fragment.glsl
+		06_coor/go_3d/vertex.glsl
+		06_coor/go_3d/main.cpp)
+
+# add an executable with the above sources
+
+add_executable(${PROJECT_NAME}_06_go_3d ${06_coor_go_3d})
+target_include_directories(${PROJECT_NAME}_06_go_3d
+		PRIVATE
+		${PROJECT_SOURCE_DIR}/include)
+target_link_libraries(${PROJECT_NAME}_06_go_3d
+		-lglfw
+		-lGL
+		-lm
+		-lXrandr
+		-lXi
+		-lX11
+		-lXxf86vm
+		-lpthread
+		-ldl
+		-lXinerama
+		-lXcursor
+		)
+### 06_coor_more_3d
+file(GLOB 06_coor_more_3d
+		glad.c
+		06_coor/more_3d/fragment.glsl
+		06_coor/more_3d/vertex.glsl
+		06_coor/more_3d/main.cpp)
+
+# add an executable with the above sources
+
+add_executable(${PROJECT_NAME}_06_more_3d ${06_coor_more_3d})
+target_include_directories(${PROJECT_NAME}_06_more_3d
+		PRIVATE
+		${PROJECT_SOURCE_DIR}/include)
+target_link_libraries(${PROJECT_NAME}_06_more_3d
+		-lglfw
+		-lGL
+		-lm
+		-lXrandr
+		-lXi
+		-lX11
+		-lXxf86vm
+		-lpthread
+		-ldl
+		-lXinerama
+		-lXcursor
+		)
+### 06_coor_more_cubes
+file(GLOB 06_coor_more_cubes
+		glad.c
+		06_coor/more_cubes/fragment.glsl
+		06_coor/more_cubes/vertex.glsl
+		06_coor/more_cubes/main.cpp)
+
+# add an executable with the above sources
+
+add_executable(${PROJECT_NAME}_06_more_cubes ${06_coor_more_cubes})
+target_include_directories(${PROJECT_NAME}_06_more_cubes
+		PRIVATE
+		${PROJECT_SOURCE_DIR}/include)
+target_link_libraries(${PROJECT_NAME}_06_more_cubes
+		-lglfw
+		-lGL
+		-lm
+		-lXrandr
+		-lXi
+		-lX11
+		-lXxf86vm
+		-lpthread
+		-ldl
+		-lXinerama
+		-lXcursor
+		)
+### 06_coor_ex_3
+file(GLOB 06_coor_ex_3
+		glad.c
+		06_coor/ex_3/fragment.glsl
+		06_coor/ex_3/vertex.glsl
+		06_coor/ex_3/main.cpp)
+
+# add an executable with the above sources
+
+add_executable(${PROJECT_NAME}_06_ex_3 ${06_coor_ex_3})
+target_include_directories(${PROJECT_NAME}_06_ex_3
+		PRIVATE
+		${PROJECT_SOURCE_DIR}/include)
+target_link_libraries(${PROJECT_NAME}_06_ex_3
+		-lglfw
+		-lGL
+		-lm
+		-lXrandr
+		-lXi
+		-lX11
+		-lXxf86vm
+		-lpthread
+		-ldl
+		-lXinerama
+		-lXcursor
+		)
+### 07_camera_look_at
+file(GLOB 07_camera_look_at
+		glad.c
+		07_camera/look_at/fragment.glsl
+		07_camera/look_at/vertex.glsl
+		07_camera/look_at/main.cpp)
+
+# add an executable with the above sources
+
+add_executable(${PROJECT_NAME}_07_camera_look_at ${07_camera_look_at})
+target_include_directories(${PROJECT_NAME}_07_camera_look_at
+		PRIVATE
+		${PROJECT_SOURCE_DIR}/include)
+target_link_libraries(${PROJECT_NAME}_07_camera_look_at
+		-lglfw
+		-lGL
+		-lm
+		-lXrandr
+		-lXi
+		-lX11
+		-lXxf86vm
+		-lpthread
+		-ldl
+		-lXinerama
+		-lXcursor
+		)
+### 07_camera_walk_around
+file(GLOB 07_camera_walk_around
+		glad.c
+		07_camera/walk_around/fragment.glsl
+		07_camera/walk_around/vertex.glsl
+		07_camera/walk_around/main.cpp)
+
+# add an executable with the above sources
+
+add_executable(${PROJECT_NAME}_07_camera_walk_around ${07_camera_walk_around})
+target_include_directories(${PROJECT_NAME}_07_camera_walk_around
+		PRIVATE
+		${PROJECT_SOURCE_DIR}/include)
+target_link_libraries(${PROJECT_NAME}_07_camera_walk_around
+		-lglfw
+		-lGL
+		-lm
+		-lXrandr
+		-lXi
+		-lX11
+		-lXxf86vm
+		-lpthread
+		-ldl
+		-lXinerama
+		-lXcursor
+		)
+### 07_camera_ex_1
+file(GLOB 07_camera_ex_1
+		glad.c
+		07_camera/ex_1/fragment.glsl
+		07_camera/ex_1/vertex.glsl
+		07_camera/ex_1/main.cpp
+		07_camera/ex_1/camera.h)
+
+# add an executable with the above sources
+
+add_executable(${PROJECT_NAME}_07_camera_ex_1 ${07_camera_ex_1})
+target_include_directories(${PROJECT_NAME}_07_camera_ex_1
+		PRIVATE
+		${PROJECT_SOURCE_DIR}/include)
+target_link_libraries(${PROJECT_NAME}_07_camera_ex_1
+		-lglfw
+		-lGL
+		-lm
+		-lXrandr
+		-lXi
+		-lX11
+		-lXxf86vm
+		-lpthread
+		-ldl
+		-lXinerama
+		-lXcursor
+		)
+### 07_camera_ex_2
+file(GLOB 07_camera_ex_2
+		glad.c
+		07_camera/ex_2/fragment.glsl
+		07_camera/ex_2/vertex.glsl
+		07_camera/ex_2/main.cpp)
+
+# add an executable with the above sources
+
+add_executable(${PROJECT_NAME}_07_camera_ex_2 ${07_camera_ex_2})
+target_include_directories(${PROJECT_NAME}_07_camera_ex_2
+		PRIVATE
+		${PROJECT_SOURCE_DIR}/include)
+target_link_libraries(${PROJECT_NAME}_07_camera_ex_2
+		-lglfw
+		-lGL
+		-lm
+		-lXrandr
+		-lXi
+		-lX11
+		-lXxf86vm
+		-lpthread
+		-ldl
+		-lXinerama
+		-lXcursor
+		)

@@ -102,7 +102,7 @@ int main()
     // load image, create texture and generate mipmaps
     int width, height, nrChannels;
     // The FileSystem::getPath(...) is part of the GitHub repository so we can find files on any IDE/platform; replace it with your own image path.
-    unsigned char *data = stbi_load(std::filesystem::path("../04_texture/mix_color/container.jpg").c_str(), &width, &height, &nrChannels, 0);
+    unsigned char *data = stbi_load(std::filesystem::path("../resources/textures/container.jpg").c_str(), &width, &height, &nrChannels, 0);
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);

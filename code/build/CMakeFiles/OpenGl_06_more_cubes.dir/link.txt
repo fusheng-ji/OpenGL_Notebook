@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/OpenGl_06_more_cubes.dir/06_coor/more_cubes/main.cpp.o CMakeFiles/OpenGl_06_more_cubes.dir/glad.c.o  -o OpenGl_06_more_cubes  -lglfw -lGL -lm -lXrandr -lXi -lX11 -lXxf86vm -lpthread -ldl -lXinerama -lXcursor 

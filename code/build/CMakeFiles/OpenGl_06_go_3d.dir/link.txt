@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/OpenGl_06_go_3d.dir/06_coor/go_3d/main.cpp.o CMakeFiles/OpenGl_06_go_3d.dir/glad.c.o  -o OpenGl_06_go_3d  -lglfw -lGL -lm -lXrandr -lXi -lX11 -lXxf86vm -lpthread -ldl -lXinerama -lXcursor 

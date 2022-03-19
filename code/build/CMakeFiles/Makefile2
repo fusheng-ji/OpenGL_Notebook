@@ -53,26 +53,38 @@ CMAKE_BINARY_DIR = /home/wenboji/OpenGL_Notebook/code/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/OpenGl_04_ex_3.dir/all
-all: CMakeFiles/OpenGl_04_ex_2.dir/all
-all: CMakeFiles/OpenGl_04_mix_color.dir/all
-all: CMakeFiles/OpenGl_04_ex_4.dir/all
-all: CMakeFiles/OpenGl_01.dir/all
-all: CMakeFiles/OpenGl_04_mix_texture.dir/all
-all: CMakeFiles/OpenGl_02_triangle.dir/all
-all: CMakeFiles/OpenGl_02_rectangle.dir/all
-all: CMakeFiles/OpenGl_04_ex_1.dir/all
-all: CMakeFiles/OpenGl_03_uniform.dir/all
-all: CMakeFiles/OpenGl_02_ex_1.dir/all
-all: CMakeFiles/OpenGl_03_interpolation.dir/all
-all: CMakeFiles/OpenGl_02_ex_2.dir/all
-all: CMakeFiles/OpenGl_04_generate_texture.dir/all
-all: CMakeFiles/OpenGl_03_class.dir/all
-all: CMakeFiles/OpenGl_02_ex_3.dir/all
+all: CMakeFiles/OpenGl_07_camera_ex_2.dir/all
+all: CMakeFiles/OpenGl_07_camera_ex_1.dir/all
+all: CMakeFiles/OpenGl_07_camera_walk_around.dir/all
 all: CMakeFiles/OpenGl_03_Ins_outs.dir/all
-all: CMakeFiles/OpenGl_03_ex_1.dir/all
-all: CMakeFiles/OpenGl_03_ex_2.dir/all
+all: CMakeFiles/OpenGl_02_ex_3.dir/all
+all: CMakeFiles/OpenGl_04_generate_texture.dir/all
+all: CMakeFiles/OpenGl_05_ex_2.dir/all
+all: CMakeFiles/OpenGl_02_ex_2.dir/all
+all: CMakeFiles/OpenGl_02_ex_1.dir/all
+all: CMakeFiles/OpenGl_03_uniform.dir/all
+all: CMakeFiles/OpenGl_05_ex_1.dir/all
+all: CMakeFiles/OpenGl_02_triangle.dir/all
+all: CMakeFiles/OpenGl_04_mix_texture.dir/all
 all: CMakeFiles/OpenGl_03_ex_3.dir/all
+all: CMakeFiles/OpenGl_07_camera_look_at.dir/all
+all: CMakeFiles/OpenGl_04_ex_4.dir/all
+all: CMakeFiles/OpenGl_04_mix_color.dir/all
+all: CMakeFiles/OpenGl_03_interpolation.dir/all
+all: CMakeFiles/OpenGl_04_ex_2.dir/all
+all: CMakeFiles/OpenGl_05_rotate.dir/all
+all: CMakeFiles/OpenGl_03_ex_1.dir/all
+all: CMakeFiles/OpenGl_01.dir/all
+all: CMakeFiles/OpenGl_05_rotate_with_time.dir/all
+all: CMakeFiles/OpenGl_03_class.dir/all
+all: CMakeFiles/OpenGl_04_ex_1.dir/all
+all: CMakeFiles/OpenGl_04_ex_3.dir/all
+all: CMakeFiles/OpenGl_06_go_3d.dir/all
+all: CMakeFiles/OpenGl_06_more_3d.dir/all
+all: CMakeFiles/OpenGl_03_ex_2.dir/all
+all: CMakeFiles/OpenGl_02_rectangle.dir/all
+all: CMakeFiles/OpenGl_06_more_cubes.dir/all
+all: CMakeFiles/OpenGl_06_ex_3.dir/all
 
 .PHONY : all
 
@@ -82,460 +94,121 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/OpenGl_04_ex_3.dir/clean
-clean: CMakeFiles/OpenGl_04_ex_2.dir/clean
-clean: CMakeFiles/OpenGl_04_mix_color.dir/clean
-clean: CMakeFiles/OpenGl_04_ex_4.dir/clean
-clean: CMakeFiles/OpenGl_01.dir/clean
-clean: CMakeFiles/OpenGl_04_mix_texture.dir/clean
-clean: CMakeFiles/OpenGl_02_triangle.dir/clean
-clean: CMakeFiles/OpenGl_02_rectangle.dir/clean
-clean: CMakeFiles/OpenGl_04_ex_1.dir/clean
-clean: CMakeFiles/OpenGl_03_uniform.dir/clean
-clean: CMakeFiles/OpenGl_02_ex_1.dir/clean
-clean: CMakeFiles/OpenGl_03_interpolation.dir/clean
-clean: CMakeFiles/OpenGl_02_ex_2.dir/clean
-clean: CMakeFiles/OpenGl_04_generate_texture.dir/clean
-clean: CMakeFiles/OpenGl_03_class.dir/clean
-clean: CMakeFiles/OpenGl_02_ex_3.dir/clean
+clean: CMakeFiles/OpenGl_07_camera_ex_2.dir/clean
+clean: CMakeFiles/OpenGl_07_camera_ex_1.dir/clean
+clean: CMakeFiles/OpenGl_07_camera_walk_around.dir/clean
 clean: CMakeFiles/OpenGl_03_Ins_outs.dir/clean
-clean: CMakeFiles/OpenGl_03_ex_1.dir/clean
-clean: CMakeFiles/OpenGl_03_ex_2.dir/clean
+clean: CMakeFiles/OpenGl_02_ex_3.dir/clean
+clean: CMakeFiles/OpenGl_04_generate_texture.dir/clean
+clean: CMakeFiles/OpenGl_05_ex_2.dir/clean
+clean: CMakeFiles/OpenGl_02_ex_2.dir/clean
+clean: CMakeFiles/OpenGl_02_ex_1.dir/clean
+clean: CMakeFiles/OpenGl_03_uniform.dir/clean
+clean: CMakeFiles/OpenGl_05_ex_1.dir/clean
+clean: CMakeFiles/OpenGl_02_triangle.dir/clean
+clean: CMakeFiles/OpenGl_04_mix_texture.dir/clean
 clean: CMakeFiles/OpenGl_03_ex_3.dir/clean
+clean: CMakeFiles/OpenGl_07_camera_look_at.dir/clean
+clean: CMakeFiles/OpenGl_04_ex_4.dir/clean
+clean: CMakeFiles/OpenGl_04_mix_color.dir/clean
+clean: CMakeFiles/OpenGl_03_interpolation.dir/clean
+clean: CMakeFiles/OpenGl_04_ex_2.dir/clean
+clean: CMakeFiles/OpenGl_05_rotate.dir/clean
+clean: CMakeFiles/OpenGl_03_ex_1.dir/clean
+clean: CMakeFiles/OpenGl_01.dir/clean
+clean: CMakeFiles/OpenGl_05_rotate_with_time.dir/clean
+clean: CMakeFiles/OpenGl_03_class.dir/clean
+clean: CMakeFiles/OpenGl_04_ex_1.dir/clean
+clean: CMakeFiles/OpenGl_04_ex_3.dir/clean
+clean: CMakeFiles/OpenGl_06_go_3d.dir/clean
+clean: CMakeFiles/OpenGl_06_more_3d.dir/clean
+clean: CMakeFiles/OpenGl_03_ex_2.dir/clean
+clean: CMakeFiles/OpenGl_02_rectangle.dir/clean
+clean: CMakeFiles/OpenGl_06_more_cubes.dir/clean
+clean: CMakeFiles/OpenGl_06_ex_3.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/OpenGl_04_ex_3.dir
+# Target rules for target CMakeFiles/OpenGl_07_camera_ex_2.dir
 
 # All Build rule for target.
-CMakeFiles/OpenGl_04_ex_3.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=46,47,48 "Built target OpenGl_04_ex_3"
-.PHONY : CMakeFiles/OpenGl_04_ex_3.dir/all
+CMakeFiles/OpenGl_07_camera_ex_2.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_2.dir/build.make CMakeFiles/OpenGl_07_camera_ex_2.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_2.dir/build.make CMakeFiles/OpenGl_07_camera_ex_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=88,89,90 "Built target OpenGl_07_camera_ex_2"
+.PHONY : CMakeFiles/OpenGl_07_camera_ex_2.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_04_ex_3.dir/rule: cmake_check_build_system
+CMakeFiles/OpenGl_07_camera_ex_2.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_04_ex_3.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_07_camera_ex_2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_04_ex_3.dir/rule
+.PHONY : CMakeFiles/OpenGl_07_camera_ex_2.dir/rule
 
 # Convenience name for target.
-OpenGl_04_ex_3: CMakeFiles/OpenGl_04_ex_3.dir/rule
+OpenGl_07_camera_ex_2: CMakeFiles/OpenGl_07_camera_ex_2.dir/rule
 
-.PHONY : OpenGl_04_ex_3
+.PHONY : OpenGl_07_camera_ex_2
 
 # clean rule for target.
-CMakeFiles/OpenGl_04_ex_3.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/clean
-.PHONY : CMakeFiles/OpenGl_04_ex_3.dir/clean
+CMakeFiles/OpenGl_07_camera_ex_2.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_2.dir/build.make CMakeFiles/OpenGl_07_camera_ex_2.dir/clean
+.PHONY : CMakeFiles/OpenGl_07_camera_ex_2.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/OpenGl_04_ex_2.dir
+# Target rules for target CMakeFiles/OpenGl_07_camera_ex_1.dir
 
 # All Build rule for target.
-CMakeFiles/OpenGl_04_ex_2.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=43,44,45 "Built target OpenGl_04_ex_2"
-.PHONY : CMakeFiles/OpenGl_04_ex_2.dir/all
+CMakeFiles/OpenGl_07_camera_ex_1.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_1.dir/build.make CMakeFiles/OpenGl_07_camera_ex_1.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_1.dir/build.make CMakeFiles/OpenGl_07_camera_ex_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=85,86,87 "Built target OpenGl_07_camera_ex_1"
+.PHONY : CMakeFiles/OpenGl_07_camera_ex_1.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_04_ex_2.dir/rule: cmake_check_build_system
+CMakeFiles/OpenGl_07_camera_ex_1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_04_ex_2.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_07_camera_ex_1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_04_ex_2.dir/rule
+.PHONY : CMakeFiles/OpenGl_07_camera_ex_1.dir/rule
 
 # Convenience name for target.
-OpenGl_04_ex_2: CMakeFiles/OpenGl_04_ex_2.dir/rule
+OpenGl_07_camera_ex_1: CMakeFiles/OpenGl_07_camera_ex_1.dir/rule
 
-.PHONY : OpenGl_04_ex_2
+.PHONY : OpenGl_07_camera_ex_1
 
 # clean rule for target.
-CMakeFiles/OpenGl_04_ex_2.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/clean
-.PHONY : CMakeFiles/OpenGl_04_ex_2.dir/clean
+CMakeFiles/OpenGl_07_camera_ex_1.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_1.dir/build.make CMakeFiles/OpenGl_07_camera_ex_1.dir/clean
+.PHONY : CMakeFiles/OpenGl_07_camera_ex_1.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/OpenGl_04_mix_color.dir
+# Target rules for target CMakeFiles/OpenGl_07_camera_walk_around.dir
 
 # All Build rule for target.
-CMakeFiles/OpenGl_04_mix_color.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=55,56,57 "Built target OpenGl_04_mix_color"
-.PHONY : CMakeFiles/OpenGl_04_mix_color.dir/all
+CMakeFiles/OpenGl_07_camera_walk_around.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_walk_around.dir/build.make CMakeFiles/OpenGl_07_camera_walk_around.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_walk_around.dir/build.make CMakeFiles/OpenGl_07_camera_walk_around.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=94,95,96 "Built target OpenGl_07_camera_walk_around"
+.PHONY : CMakeFiles/OpenGl_07_camera_walk_around.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_04_mix_color.dir/rule: cmake_check_build_system
+CMakeFiles/OpenGl_07_camera_walk_around.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_04_mix_color.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_07_camera_walk_around.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_04_mix_color.dir/rule
+.PHONY : CMakeFiles/OpenGl_07_camera_walk_around.dir/rule
 
 # Convenience name for target.
-OpenGl_04_mix_color: CMakeFiles/OpenGl_04_mix_color.dir/rule
+OpenGl_07_camera_walk_around: CMakeFiles/OpenGl_07_camera_walk_around.dir/rule
 
-.PHONY : OpenGl_04_mix_color
-
-# clean rule for target.
-CMakeFiles/OpenGl_04_mix_color.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/clean
-.PHONY : CMakeFiles/OpenGl_04_mix_color.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/OpenGl_04_ex_4.dir
-
-# All Build rule for target.
-CMakeFiles/OpenGl_04_ex_4.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=49,50,51 "Built target OpenGl_04_ex_4"
-.PHONY : CMakeFiles/OpenGl_04_ex_4.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_04_ex_4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_04_ex_4.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_04_ex_4.dir/rule
-
-# Convenience name for target.
-OpenGl_04_ex_4: CMakeFiles/OpenGl_04_ex_4.dir/rule
-
-.PHONY : OpenGl_04_ex_4
+.PHONY : OpenGl_07_camera_walk_around
 
 # clean rule for target.
-CMakeFiles/OpenGl_04_ex_4.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/clean
-.PHONY : CMakeFiles/OpenGl_04_ex_4.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/OpenGl_01.dir
-
-# All Build rule for target.
-CMakeFiles/OpenGl_01.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=1,2,3 "Built target OpenGl_01"
-.PHONY : CMakeFiles/OpenGl_01.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_01.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_01.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_01.dir/rule
-
-# Convenience name for target.
-OpenGl_01: CMakeFiles/OpenGl_01.dir/rule
-
-.PHONY : OpenGl_01
-
-# clean rule for target.
-CMakeFiles/OpenGl_01.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/clean
-.PHONY : CMakeFiles/OpenGl_01.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/OpenGl_04_mix_texture.dir
-
-# All Build rule for target.
-CMakeFiles/OpenGl_04_mix_texture.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=58,59,60 "Built target OpenGl_04_mix_texture"
-.PHONY : CMakeFiles/OpenGl_04_mix_texture.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_04_mix_texture.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_04_mix_texture.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_04_mix_texture.dir/rule
-
-# Convenience name for target.
-OpenGl_04_mix_texture: CMakeFiles/OpenGl_04_mix_texture.dir/rule
-
-.PHONY : OpenGl_04_mix_texture
-
-# clean rule for target.
-CMakeFiles/OpenGl_04_mix_texture.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/clean
-.PHONY : CMakeFiles/OpenGl_04_mix_texture.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/OpenGl_02_triangle.dir
-
-# All Build rule for target.
-CMakeFiles/OpenGl_02_triangle.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=16,17,18 "Built target OpenGl_02_triangle"
-.PHONY : CMakeFiles/OpenGl_02_triangle.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_02_triangle.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_02_triangle.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_02_triangle.dir/rule
-
-# Convenience name for target.
-OpenGl_02_triangle: CMakeFiles/OpenGl_02_triangle.dir/rule
-
-.PHONY : OpenGl_02_triangle
-
-# clean rule for target.
-CMakeFiles/OpenGl_02_triangle.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/clean
-.PHONY : CMakeFiles/OpenGl_02_triangle.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/OpenGl_02_rectangle.dir
-
-# All Build rule for target.
-CMakeFiles/OpenGl_02_rectangle.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=13,14,15 "Built target OpenGl_02_rectangle"
-.PHONY : CMakeFiles/OpenGl_02_rectangle.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_02_rectangle.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_02_rectangle.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_02_rectangle.dir/rule
-
-# Convenience name for target.
-OpenGl_02_rectangle: CMakeFiles/OpenGl_02_rectangle.dir/rule
-
-.PHONY : OpenGl_02_rectangle
-
-# clean rule for target.
-CMakeFiles/OpenGl_02_rectangle.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/clean
-.PHONY : CMakeFiles/OpenGl_02_rectangle.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/OpenGl_04_ex_1.dir
-
-# All Build rule for target.
-CMakeFiles/OpenGl_04_ex_1.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=40,41,42 "Built target OpenGl_04_ex_1"
-.PHONY : CMakeFiles/OpenGl_04_ex_1.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_04_ex_1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_04_ex_1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_04_ex_1.dir/rule
-
-# Convenience name for target.
-OpenGl_04_ex_1: CMakeFiles/OpenGl_04_ex_1.dir/rule
-
-.PHONY : OpenGl_04_ex_1
-
-# clean rule for target.
-CMakeFiles/OpenGl_04_ex_1.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/clean
-.PHONY : CMakeFiles/OpenGl_04_ex_1.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/OpenGl_03_uniform.dir
-
-# All Build rule for target.
-CMakeFiles/OpenGl_03_uniform.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=37,38,39 "Built target OpenGl_03_uniform"
-.PHONY : CMakeFiles/OpenGl_03_uniform.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_03_uniform.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_03_uniform.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_03_uniform.dir/rule
-
-# Convenience name for target.
-OpenGl_03_uniform: CMakeFiles/OpenGl_03_uniform.dir/rule
-
-.PHONY : OpenGl_03_uniform
-
-# clean rule for target.
-CMakeFiles/OpenGl_03_uniform.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/clean
-.PHONY : CMakeFiles/OpenGl_03_uniform.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/OpenGl_02_ex_1.dir
-
-# All Build rule for target.
-CMakeFiles/OpenGl_02_ex_1.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=4,5,6 "Built target OpenGl_02_ex_1"
-.PHONY : CMakeFiles/OpenGl_02_ex_1.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_02_ex_1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_02_ex_1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_02_ex_1.dir/rule
-
-# Convenience name for target.
-OpenGl_02_ex_1: CMakeFiles/OpenGl_02_ex_1.dir/rule
-
-.PHONY : OpenGl_02_ex_1
-
-# clean rule for target.
-CMakeFiles/OpenGl_02_ex_1.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/clean
-.PHONY : CMakeFiles/OpenGl_02_ex_1.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/OpenGl_03_interpolation.dir
-
-# All Build rule for target.
-CMakeFiles/OpenGl_03_interpolation.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=34,35,36 "Built target OpenGl_03_interpolation"
-.PHONY : CMakeFiles/OpenGl_03_interpolation.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_03_interpolation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_03_interpolation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_03_interpolation.dir/rule
-
-# Convenience name for target.
-OpenGl_03_interpolation: CMakeFiles/OpenGl_03_interpolation.dir/rule
-
-.PHONY : OpenGl_03_interpolation
-
-# clean rule for target.
-CMakeFiles/OpenGl_03_interpolation.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/clean
-.PHONY : CMakeFiles/OpenGl_03_interpolation.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/OpenGl_02_ex_2.dir
-
-# All Build rule for target.
-CMakeFiles/OpenGl_02_ex_2.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=7,8,9 "Built target OpenGl_02_ex_2"
-.PHONY : CMakeFiles/OpenGl_02_ex_2.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_02_ex_2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_02_ex_2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_02_ex_2.dir/rule
-
-# Convenience name for target.
-OpenGl_02_ex_2: CMakeFiles/OpenGl_02_ex_2.dir/rule
-
-.PHONY : OpenGl_02_ex_2
-
-# clean rule for target.
-CMakeFiles/OpenGl_02_ex_2.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/clean
-.PHONY : CMakeFiles/OpenGl_02_ex_2.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/OpenGl_04_generate_texture.dir
-
-# All Build rule for target.
-CMakeFiles/OpenGl_04_generate_texture.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=52,53,54 "Built target OpenGl_04_generate_texture"
-.PHONY : CMakeFiles/OpenGl_04_generate_texture.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_04_generate_texture.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_04_generate_texture.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_04_generate_texture.dir/rule
-
-# Convenience name for target.
-OpenGl_04_generate_texture: CMakeFiles/OpenGl_04_generate_texture.dir/rule
-
-.PHONY : OpenGl_04_generate_texture
-
-# clean rule for target.
-CMakeFiles/OpenGl_04_generate_texture.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/clean
-.PHONY : CMakeFiles/OpenGl_04_generate_texture.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/OpenGl_03_class.dir
-
-# All Build rule for target.
-CMakeFiles/OpenGl_03_class.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=22,23,24 "Built target OpenGl_03_class"
-.PHONY : CMakeFiles/OpenGl_03_class.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_03_class.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_03_class.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_03_class.dir/rule
-
-# Convenience name for target.
-OpenGl_03_class: CMakeFiles/OpenGl_03_class.dir/rule
-
-.PHONY : OpenGl_03_class
-
-# clean rule for target.
-CMakeFiles/OpenGl_03_class.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/clean
-.PHONY : CMakeFiles/OpenGl_03_class.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/OpenGl_02_ex_3.dir
-
-# All Build rule for target.
-CMakeFiles/OpenGl_02_ex_3.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=10,11,12 "Built target OpenGl_02_ex_3"
-.PHONY : CMakeFiles/OpenGl_02_ex_3.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_02_ex_3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_02_ex_3.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_02_ex_3.dir/rule
-
-# Convenience name for target.
-OpenGl_02_ex_3: CMakeFiles/OpenGl_02_ex_3.dir/rule
-
-.PHONY : OpenGl_02_ex_3
-
-# clean rule for target.
-CMakeFiles/OpenGl_02_ex_3.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/clean
-.PHONY : CMakeFiles/OpenGl_02_ex_3.dir/clean
+CMakeFiles/OpenGl_07_camera_walk_around.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_walk_around.dir/build.make CMakeFiles/OpenGl_07_camera_walk_around.dir/clean
+.PHONY : CMakeFiles/OpenGl_07_camera_walk_around.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/OpenGl_03_Ins_outs.dir
@@ -565,6 +238,438 @@ CMakeFiles/OpenGl_03_Ins_outs.dir/clean:
 .PHONY : CMakeFiles/OpenGl_03_Ins_outs.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/OpenGl_02_ex_3.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_02_ex_3.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=10,11,12 "Built target OpenGl_02_ex_3"
+.PHONY : CMakeFiles/OpenGl_02_ex_3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_02_ex_3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_02_ex_3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_02_ex_3.dir/rule
+
+# Convenience name for target.
+OpenGl_02_ex_3: CMakeFiles/OpenGl_02_ex_3.dir/rule
+
+.PHONY : OpenGl_02_ex_3
+
+# clean rule for target.
+CMakeFiles/OpenGl_02_ex_3.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/clean
+.PHONY : CMakeFiles/OpenGl_02_ex_3.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_04_generate_texture.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_04_generate_texture.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=52,53,54 "Built target OpenGl_04_generate_texture"
+.PHONY : CMakeFiles/OpenGl_04_generate_texture.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_04_generate_texture.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_04_generate_texture.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_04_generate_texture.dir/rule
+
+# Convenience name for target.
+OpenGl_04_generate_texture: CMakeFiles/OpenGl_04_generate_texture.dir/rule
+
+.PHONY : OpenGl_04_generate_texture
+
+# clean rule for target.
+CMakeFiles/OpenGl_04_generate_texture.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/clean
+.PHONY : CMakeFiles/OpenGl_04_generate_texture.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_05_ex_2.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_05_ex_2.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_2.dir/build.make CMakeFiles/OpenGl_05_ex_2.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_2.dir/build.make CMakeFiles/OpenGl_05_ex_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=64,65,66 "Built target OpenGl_05_ex_2"
+.PHONY : CMakeFiles/OpenGl_05_ex_2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_05_ex_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_05_ex_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_05_ex_2.dir/rule
+
+# Convenience name for target.
+OpenGl_05_ex_2: CMakeFiles/OpenGl_05_ex_2.dir/rule
+
+.PHONY : OpenGl_05_ex_2
+
+# clean rule for target.
+CMakeFiles/OpenGl_05_ex_2.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_2.dir/build.make CMakeFiles/OpenGl_05_ex_2.dir/clean
+.PHONY : CMakeFiles/OpenGl_05_ex_2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_02_ex_2.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_02_ex_2.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=7,8,9 "Built target OpenGl_02_ex_2"
+.PHONY : CMakeFiles/OpenGl_02_ex_2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_02_ex_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_02_ex_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_02_ex_2.dir/rule
+
+# Convenience name for target.
+OpenGl_02_ex_2: CMakeFiles/OpenGl_02_ex_2.dir/rule
+
+.PHONY : OpenGl_02_ex_2
+
+# clean rule for target.
+CMakeFiles/OpenGl_02_ex_2.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/clean
+.PHONY : CMakeFiles/OpenGl_02_ex_2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_02_ex_1.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_02_ex_1.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=4,5,6 "Built target OpenGl_02_ex_1"
+.PHONY : CMakeFiles/OpenGl_02_ex_1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_02_ex_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_02_ex_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_02_ex_1.dir/rule
+
+# Convenience name for target.
+OpenGl_02_ex_1: CMakeFiles/OpenGl_02_ex_1.dir/rule
+
+.PHONY : OpenGl_02_ex_1
+
+# clean rule for target.
+CMakeFiles/OpenGl_02_ex_1.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/clean
+.PHONY : CMakeFiles/OpenGl_02_ex_1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_03_uniform.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_03_uniform.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=37,38,39 "Built target OpenGl_03_uniform"
+.PHONY : CMakeFiles/OpenGl_03_uniform.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_03_uniform.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_03_uniform.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_03_uniform.dir/rule
+
+# Convenience name for target.
+OpenGl_03_uniform: CMakeFiles/OpenGl_03_uniform.dir/rule
+
+.PHONY : OpenGl_03_uniform
+
+# clean rule for target.
+CMakeFiles/OpenGl_03_uniform.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/clean
+.PHONY : CMakeFiles/OpenGl_03_uniform.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_05_ex_1.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_05_ex_1.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_1.dir/build.make CMakeFiles/OpenGl_05_ex_1.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_1.dir/build.make CMakeFiles/OpenGl_05_ex_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=61,62,63 "Built target OpenGl_05_ex_1"
+.PHONY : CMakeFiles/OpenGl_05_ex_1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_05_ex_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_05_ex_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_05_ex_1.dir/rule
+
+# Convenience name for target.
+OpenGl_05_ex_1: CMakeFiles/OpenGl_05_ex_1.dir/rule
+
+.PHONY : OpenGl_05_ex_1
+
+# clean rule for target.
+CMakeFiles/OpenGl_05_ex_1.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_1.dir/build.make CMakeFiles/OpenGl_05_ex_1.dir/clean
+.PHONY : CMakeFiles/OpenGl_05_ex_1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_02_triangle.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_02_triangle.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=16,17,18 "Built target OpenGl_02_triangle"
+.PHONY : CMakeFiles/OpenGl_02_triangle.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_02_triangle.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_02_triangle.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_02_triangle.dir/rule
+
+# Convenience name for target.
+OpenGl_02_triangle: CMakeFiles/OpenGl_02_triangle.dir/rule
+
+.PHONY : OpenGl_02_triangle
+
+# clean rule for target.
+CMakeFiles/OpenGl_02_triangle.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/clean
+.PHONY : CMakeFiles/OpenGl_02_triangle.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_04_mix_texture.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_04_mix_texture.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=58,59,60 "Built target OpenGl_04_mix_texture"
+.PHONY : CMakeFiles/OpenGl_04_mix_texture.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_04_mix_texture.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_04_mix_texture.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_04_mix_texture.dir/rule
+
+# Convenience name for target.
+OpenGl_04_mix_texture: CMakeFiles/OpenGl_04_mix_texture.dir/rule
+
+.PHONY : OpenGl_04_mix_texture
+
+# clean rule for target.
+CMakeFiles/OpenGl_04_mix_texture.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/clean
+.PHONY : CMakeFiles/OpenGl_04_mix_texture.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_03_ex_3.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_03_ex_3.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=31,32,33 "Built target OpenGl_03_ex_3"
+.PHONY : CMakeFiles/OpenGl_03_ex_3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_03_ex_3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_03_ex_3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_03_ex_3.dir/rule
+
+# Convenience name for target.
+OpenGl_03_ex_3: CMakeFiles/OpenGl_03_ex_3.dir/rule
+
+.PHONY : OpenGl_03_ex_3
+
+# clean rule for target.
+CMakeFiles/OpenGl_03_ex_3.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/clean
+.PHONY : CMakeFiles/OpenGl_03_ex_3.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_07_camera_look_at.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_07_camera_look_at.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_look_at.dir/build.make CMakeFiles/OpenGl_07_camera_look_at.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_look_at.dir/build.make CMakeFiles/OpenGl_07_camera_look_at.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=91,92,93 "Built target OpenGl_07_camera_look_at"
+.PHONY : CMakeFiles/OpenGl_07_camera_look_at.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_07_camera_look_at.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_07_camera_look_at.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_07_camera_look_at.dir/rule
+
+# Convenience name for target.
+OpenGl_07_camera_look_at: CMakeFiles/OpenGl_07_camera_look_at.dir/rule
+
+.PHONY : OpenGl_07_camera_look_at
+
+# clean rule for target.
+CMakeFiles/OpenGl_07_camera_look_at.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_look_at.dir/build.make CMakeFiles/OpenGl_07_camera_look_at.dir/clean
+.PHONY : CMakeFiles/OpenGl_07_camera_look_at.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_04_ex_4.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_04_ex_4.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=49,50,51 "Built target OpenGl_04_ex_4"
+.PHONY : CMakeFiles/OpenGl_04_ex_4.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_04_ex_4.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_04_ex_4.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_04_ex_4.dir/rule
+
+# Convenience name for target.
+OpenGl_04_ex_4: CMakeFiles/OpenGl_04_ex_4.dir/rule
+
+.PHONY : OpenGl_04_ex_4
+
+# clean rule for target.
+CMakeFiles/OpenGl_04_ex_4.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/clean
+.PHONY : CMakeFiles/OpenGl_04_ex_4.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_04_mix_color.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_04_mix_color.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=55,56,57 "Built target OpenGl_04_mix_color"
+.PHONY : CMakeFiles/OpenGl_04_mix_color.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_04_mix_color.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_04_mix_color.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_04_mix_color.dir/rule
+
+# Convenience name for target.
+OpenGl_04_mix_color: CMakeFiles/OpenGl_04_mix_color.dir/rule
+
+.PHONY : OpenGl_04_mix_color
+
+# clean rule for target.
+CMakeFiles/OpenGl_04_mix_color.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/clean
+.PHONY : CMakeFiles/OpenGl_04_mix_color.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_03_interpolation.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_03_interpolation.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=34,35,36 "Built target OpenGl_03_interpolation"
+.PHONY : CMakeFiles/OpenGl_03_interpolation.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_03_interpolation.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_03_interpolation.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_03_interpolation.dir/rule
+
+# Convenience name for target.
+OpenGl_03_interpolation: CMakeFiles/OpenGl_03_interpolation.dir/rule
+
+.PHONY : OpenGl_03_interpolation
+
+# clean rule for target.
+CMakeFiles/OpenGl_03_interpolation.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/clean
+.PHONY : CMakeFiles/OpenGl_03_interpolation.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_04_ex_2.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_04_ex_2.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=43,44,45 "Built target OpenGl_04_ex_2"
+.PHONY : CMakeFiles/OpenGl_04_ex_2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_04_ex_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_04_ex_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_04_ex_2.dir/rule
+
+# Convenience name for target.
+OpenGl_04_ex_2: CMakeFiles/OpenGl_04_ex_2.dir/rule
+
+.PHONY : OpenGl_04_ex_2
+
+# clean rule for target.
+CMakeFiles/OpenGl_04_ex_2.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/clean
+.PHONY : CMakeFiles/OpenGl_04_ex_2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_05_rotate.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_05_rotate.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate.dir/build.make CMakeFiles/OpenGl_05_rotate.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate.dir/build.make CMakeFiles/OpenGl_05_rotate.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=67,68,69 "Built target OpenGl_05_rotate"
+.PHONY : CMakeFiles/OpenGl_05_rotate.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_05_rotate.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_05_rotate.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_05_rotate.dir/rule
+
+# Convenience name for target.
+OpenGl_05_rotate: CMakeFiles/OpenGl_05_rotate.dir/rule
+
+.PHONY : OpenGl_05_rotate
+
+# clean rule for target.
+CMakeFiles/OpenGl_05_rotate.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate.dir/build.make CMakeFiles/OpenGl_05_rotate.dir/clean
+.PHONY : CMakeFiles/OpenGl_05_rotate.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/OpenGl_03_ex_1.dir
 
 # All Build rule for target.
@@ -590,6 +695,195 @@ OpenGl_03_ex_1: CMakeFiles/OpenGl_03_ex_1.dir/rule
 CMakeFiles/OpenGl_03_ex_1.dir/clean:
 	$(MAKE) -f CMakeFiles/OpenGl_03_ex_1.dir/build.make CMakeFiles/OpenGl_03_ex_1.dir/clean
 .PHONY : CMakeFiles/OpenGl_03_ex_1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_01.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_01.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=1,2,3 "Built target OpenGl_01"
+.PHONY : CMakeFiles/OpenGl_01.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_01.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_01.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_01.dir/rule
+
+# Convenience name for target.
+OpenGl_01: CMakeFiles/OpenGl_01.dir/rule
+
+.PHONY : OpenGl_01
+
+# clean rule for target.
+CMakeFiles/OpenGl_01.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/clean
+.PHONY : CMakeFiles/OpenGl_01.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_05_rotate_with_time.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_05_rotate_with_time.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate_with_time.dir/build.make CMakeFiles/OpenGl_05_rotate_with_time.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate_with_time.dir/build.make CMakeFiles/OpenGl_05_rotate_with_time.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=70,71,72 "Built target OpenGl_05_rotate_with_time"
+.PHONY : CMakeFiles/OpenGl_05_rotate_with_time.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_05_rotate_with_time.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_05_rotate_with_time.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_05_rotate_with_time.dir/rule
+
+# Convenience name for target.
+OpenGl_05_rotate_with_time: CMakeFiles/OpenGl_05_rotate_with_time.dir/rule
+
+.PHONY : OpenGl_05_rotate_with_time
+
+# clean rule for target.
+CMakeFiles/OpenGl_05_rotate_with_time.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate_with_time.dir/build.make CMakeFiles/OpenGl_05_rotate_with_time.dir/clean
+.PHONY : CMakeFiles/OpenGl_05_rotate_with_time.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_03_class.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_03_class.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=22,23,24 "Built target OpenGl_03_class"
+.PHONY : CMakeFiles/OpenGl_03_class.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_03_class.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_03_class.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_03_class.dir/rule
+
+# Convenience name for target.
+OpenGl_03_class: CMakeFiles/OpenGl_03_class.dir/rule
+
+.PHONY : OpenGl_03_class
+
+# clean rule for target.
+CMakeFiles/OpenGl_03_class.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/clean
+.PHONY : CMakeFiles/OpenGl_03_class.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_04_ex_1.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_04_ex_1.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=40,41,42 "Built target OpenGl_04_ex_1"
+.PHONY : CMakeFiles/OpenGl_04_ex_1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_04_ex_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_04_ex_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_04_ex_1.dir/rule
+
+# Convenience name for target.
+OpenGl_04_ex_1: CMakeFiles/OpenGl_04_ex_1.dir/rule
+
+.PHONY : OpenGl_04_ex_1
+
+# clean rule for target.
+CMakeFiles/OpenGl_04_ex_1.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/clean
+.PHONY : CMakeFiles/OpenGl_04_ex_1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_04_ex_3.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_04_ex_3.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=46,47,48 "Built target OpenGl_04_ex_3"
+.PHONY : CMakeFiles/OpenGl_04_ex_3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_04_ex_3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_04_ex_3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_04_ex_3.dir/rule
+
+# Convenience name for target.
+OpenGl_04_ex_3: CMakeFiles/OpenGl_04_ex_3.dir/rule
+
+.PHONY : OpenGl_04_ex_3
+
+# clean rule for target.
+CMakeFiles/OpenGl_04_ex_3.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/clean
+.PHONY : CMakeFiles/OpenGl_04_ex_3.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_06_go_3d.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_06_go_3d.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_06_go_3d.dir/build.make CMakeFiles/OpenGl_06_go_3d.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_06_go_3d.dir/build.make CMakeFiles/OpenGl_06_go_3d.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=76,77,78 "Built target OpenGl_06_go_3d"
+.PHONY : CMakeFiles/OpenGl_06_go_3d.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_06_go_3d.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_06_go_3d.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_06_go_3d.dir/rule
+
+# Convenience name for target.
+OpenGl_06_go_3d: CMakeFiles/OpenGl_06_go_3d.dir/rule
+
+.PHONY : OpenGl_06_go_3d
+
+# clean rule for target.
+CMakeFiles/OpenGl_06_go_3d.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_06_go_3d.dir/build.make CMakeFiles/OpenGl_06_go_3d.dir/clean
+.PHONY : CMakeFiles/OpenGl_06_go_3d.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_06_more_3d.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_06_more_3d.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_3d.dir/build.make CMakeFiles/OpenGl_06_more_3d.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_3d.dir/build.make CMakeFiles/OpenGl_06_more_3d.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=79,80,81 "Built target OpenGl_06_more_3d"
+.PHONY : CMakeFiles/OpenGl_06_more_3d.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_06_more_3d.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_06_more_3d.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_06_more_3d.dir/rule
+
+# Convenience name for target.
+OpenGl_06_more_3d: CMakeFiles/OpenGl_06_more_3d.dir/rule
+
+.PHONY : OpenGl_06_more_3d
+
+# clean rule for target.
+CMakeFiles/OpenGl_06_more_3d.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_3d.dir/build.make CMakeFiles/OpenGl_06_more_3d.dir/clean
+.PHONY : CMakeFiles/OpenGl_06_more_3d.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/OpenGl_03_ex_2.dir
@@ -619,31 +913,85 @@ CMakeFiles/OpenGl_03_ex_2.dir/clean:
 .PHONY : CMakeFiles/OpenGl_03_ex_2.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/OpenGl_03_ex_3.dir
+# Target rules for target CMakeFiles/OpenGl_02_rectangle.dir
 
 # All Build rule for target.
-CMakeFiles/OpenGl_03_ex_3.dir/all:
-	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/depend
-	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=31,32,33 "Built target OpenGl_03_ex_3"
-.PHONY : CMakeFiles/OpenGl_03_ex_3.dir/all
+CMakeFiles/OpenGl_02_rectangle.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=13,14,15 "Built target OpenGl_02_rectangle"
+.PHONY : CMakeFiles/OpenGl_02_rectangle.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/OpenGl_03_ex_3.dir/rule: cmake_check_build_system
+CMakeFiles/OpenGl_02_rectangle.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_03_ex_3.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_02_rectangle.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
-.PHONY : CMakeFiles/OpenGl_03_ex_3.dir/rule
+.PHONY : CMakeFiles/OpenGl_02_rectangle.dir/rule
 
 # Convenience name for target.
-OpenGl_03_ex_3: CMakeFiles/OpenGl_03_ex_3.dir/rule
+OpenGl_02_rectangle: CMakeFiles/OpenGl_02_rectangle.dir/rule
 
-.PHONY : OpenGl_03_ex_3
+.PHONY : OpenGl_02_rectangle
 
 # clean rule for target.
-CMakeFiles/OpenGl_03_ex_3.dir/clean:
-	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/clean
-.PHONY : CMakeFiles/OpenGl_03_ex_3.dir/clean
+CMakeFiles/OpenGl_02_rectangle.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/clean
+.PHONY : CMakeFiles/OpenGl_02_rectangle.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_06_more_cubes.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_06_more_cubes.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_cubes.dir/build.make CMakeFiles/OpenGl_06_more_cubes.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_cubes.dir/build.make CMakeFiles/OpenGl_06_more_cubes.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=82,83,84 "Built target OpenGl_06_more_cubes"
+.PHONY : CMakeFiles/OpenGl_06_more_cubes.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_06_more_cubes.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_06_more_cubes.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_06_more_cubes.dir/rule
+
+# Convenience name for target.
+OpenGl_06_more_cubes: CMakeFiles/OpenGl_06_more_cubes.dir/rule
+
+.PHONY : OpenGl_06_more_cubes
+
+# clean rule for target.
+CMakeFiles/OpenGl_06_more_cubes.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_cubes.dir/build.make CMakeFiles/OpenGl_06_more_cubes.dir/clean
+.PHONY : CMakeFiles/OpenGl_06_more_cubes.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OpenGl_06_ex_3.dir
+
+# All Build rule for target.
+CMakeFiles/OpenGl_06_ex_3.dir/all:
+	$(MAKE) -f CMakeFiles/OpenGl_06_ex_3.dir/build.make CMakeFiles/OpenGl_06_ex_3.dir/depend
+	$(MAKE) -f CMakeFiles/OpenGl_06_ex_3.dir/build.make CMakeFiles/OpenGl_06_ex_3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wenboji/OpenGL_Notebook/code/build/CMakeFiles --progress-num=73,74,75 "Built target OpenGl_06_ex_3"
+.PHONY : CMakeFiles/OpenGl_06_ex_3.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OpenGl_06_ex_3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/OpenGl_06_ex_3.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wenboji/OpenGL_Notebook/code/build/CMakeFiles 0
+.PHONY : CMakeFiles/OpenGl_06_ex_3.dir/rule
+
+# Convenience name for target.
+OpenGl_06_ex_3: CMakeFiles/OpenGl_06_ex_3.dir/rule
+
+.PHONY : OpenGl_06_ex_3
+
+# clean rule for target.
+CMakeFiles/OpenGl_06_ex_3.dir/clean:
+	$(MAKE) -f CMakeFiles/OpenGl_06_ex_3.dir/build.make CMakeFiles/OpenGl_06_ex_3.dir/clean
+.PHONY : CMakeFiles/OpenGl_06_ex_3.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

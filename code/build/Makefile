@@ -111,212 +111,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named OpenGl_04_ex_3
+# Target rules for targets named OpenGl_07_camera_ex_2
 
 # Build rule for target.
-OpenGl_04_ex_3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_ex_3
-.PHONY : OpenGl_04_ex_3
+OpenGl_07_camera_ex_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_07_camera_ex_2
+.PHONY : OpenGl_07_camera_ex_2
 
 # fast build rule for target.
-OpenGl_04_ex_3/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/build
-.PHONY : OpenGl_04_ex_3/fast
+OpenGl_07_camera_ex_2/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_2.dir/build.make CMakeFiles/OpenGl_07_camera_ex_2.dir/build
+.PHONY : OpenGl_07_camera_ex_2/fast
 
 #=============================================================================
-# Target rules for targets named OpenGl_04_ex_2
+# Target rules for targets named OpenGl_07_camera_ex_1
 
 # Build rule for target.
-OpenGl_04_ex_2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_ex_2
-.PHONY : OpenGl_04_ex_2
+OpenGl_07_camera_ex_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_07_camera_ex_1
+.PHONY : OpenGl_07_camera_ex_1
 
 # fast build rule for target.
-OpenGl_04_ex_2/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/build
-.PHONY : OpenGl_04_ex_2/fast
+OpenGl_07_camera_ex_1/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_1.dir/build.make CMakeFiles/OpenGl_07_camera_ex_1.dir/build
+.PHONY : OpenGl_07_camera_ex_1/fast
 
 #=============================================================================
-# Target rules for targets named OpenGl_04_mix_color
+# Target rules for targets named OpenGl_07_camera_walk_around
 
 # Build rule for target.
-OpenGl_04_mix_color: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_mix_color
-.PHONY : OpenGl_04_mix_color
+OpenGl_07_camera_walk_around: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_07_camera_walk_around
+.PHONY : OpenGl_07_camera_walk_around
 
 # fast build rule for target.
-OpenGl_04_mix_color/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/build
-.PHONY : OpenGl_04_mix_color/fast
-
-#=============================================================================
-# Target rules for targets named OpenGl_04_ex_4
-
-# Build rule for target.
-OpenGl_04_ex_4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_ex_4
-.PHONY : OpenGl_04_ex_4
-
-# fast build rule for target.
-OpenGl_04_ex_4/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/build
-.PHONY : OpenGl_04_ex_4/fast
-
-#=============================================================================
-# Target rules for targets named OpenGl_01
-
-# Build rule for target.
-OpenGl_01: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_01
-.PHONY : OpenGl_01
-
-# fast build rule for target.
-OpenGl_01/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/build
-.PHONY : OpenGl_01/fast
-
-#=============================================================================
-# Target rules for targets named OpenGl_04_mix_texture
-
-# Build rule for target.
-OpenGl_04_mix_texture: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_mix_texture
-.PHONY : OpenGl_04_mix_texture
-
-# fast build rule for target.
-OpenGl_04_mix_texture/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/build
-.PHONY : OpenGl_04_mix_texture/fast
-
-#=============================================================================
-# Target rules for targets named OpenGl_02_triangle
-
-# Build rule for target.
-OpenGl_02_triangle: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_triangle
-.PHONY : OpenGl_02_triangle
-
-# fast build rule for target.
-OpenGl_02_triangle/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/build
-.PHONY : OpenGl_02_triangle/fast
-
-#=============================================================================
-# Target rules for targets named OpenGl_02_rectangle
-
-# Build rule for target.
-OpenGl_02_rectangle: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_rectangle
-.PHONY : OpenGl_02_rectangle
-
-# fast build rule for target.
-OpenGl_02_rectangle/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/build
-.PHONY : OpenGl_02_rectangle/fast
-
-#=============================================================================
-# Target rules for targets named OpenGl_04_ex_1
-
-# Build rule for target.
-OpenGl_04_ex_1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_ex_1
-.PHONY : OpenGl_04_ex_1
-
-# fast build rule for target.
-OpenGl_04_ex_1/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/build
-.PHONY : OpenGl_04_ex_1/fast
-
-#=============================================================================
-# Target rules for targets named OpenGl_03_uniform
-
-# Build rule for target.
-OpenGl_03_uniform: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_uniform
-.PHONY : OpenGl_03_uniform
-
-# fast build rule for target.
-OpenGl_03_uniform/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/build
-.PHONY : OpenGl_03_uniform/fast
-
-#=============================================================================
-# Target rules for targets named OpenGl_02_ex_1
-
-# Build rule for target.
-OpenGl_02_ex_1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_ex_1
-.PHONY : OpenGl_02_ex_1
-
-# fast build rule for target.
-OpenGl_02_ex_1/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/build
-.PHONY : OpenGl_02_ex_1/fast
-
-#=============================================================================
-# Target rules for targets named OpenGl_03_interpolation
-
-# Build rule for target.
-OpenGl_03_interpolation: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_interpolation
-.PHONY : OpenGl_03_interpolation
-
-# fast build rule for target.
-OpenGl_03_interpolation/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/build
-.PHONY : OpenGl_03_interpolation/fast
-
-#=============================================================================
-# Target rules for targets named OpenGl_02_ex_2
-
-# Build rule for target.
-OpenGl_02_ex_2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_ex_2
-.PHONY : OpenGl_02_ex_2
-
-# fast build rule for target.
-OpenGl_02_ex_2/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/build
-.PHONY : OpenGl_02_ex_2/fast
-
-#=============================================================================
-# Target rules for targets named OpenGl_04_generate_texture
-
-# Build rule for target.
-OpenGl_04_generate_texture: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_generate_texture
-.PHONY : OpenGl_04_generate_texture
-
-# fast build rule for target.
-OpenGl_04_generate_texture/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/build
-.PHONY : OpenGl_04_generate_texture/fast
-
-#=============================================================================
-# Target rules for targets named OpenGl_03_class
-
-# Build rule for target.
-OpenGl_03_class: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_class
-.PHONY : OpenGl_03_class
-
-# fast build rule for target.
-OpenGl_03_class/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/build
-.PHONY : OpenGl_03_class/fast
-
-#=============================================================================
-# Target rules for targets named OpenGl_02_ex_3
-
-# Build rule for target.
-OpenGl_02_ex_3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_ex_3
-.PHONY : OpenGl_02_ex_3
-
-# fast build rule for target.
-OpenGl_02_ex_3/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/build
-.PHONY : OpenGl_02_ex_3/fast
+OpenGl_07_camera_walk_around/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_walk_around.dir/build.make CMakeFiles/OpenGl_07_camera_walk_around.dir/build
+.PHONY : OpenGl_07_camera_walk_around/fast
 
 #=============================================================================
 # Target rules for targets named OpenGl_03_Ins_outs
@@ -332,6 +163,214 @@ OpenGl_03_Ins_outs/fast:
 .PHONY : OpenGl_03_Ins_outs/fast
 
 #=============================================================================
+# Target rules for targets named OpenGl_02_ex_3
+
+# Build rule for target.
+OpenGl_02_ex_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_ex_3
+.PHONY : OpenGl_02_ex_3
+
+# fast build rule for target.
+OpenGl_02_ex_3/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/build
+.PHONY : OpenGl_02_ex_3/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_04_generate_texture
+
+# Build rule for target.
+OpenGl_04_generate_texture: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_generate_texture
+.PHONY : OpenGl_04_generate_texture
+
+# fast build rule for target.
+OpenGl_04_generate_texture/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/build
+.PHONY : OpenGl_04_generate_texture/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_05_ex_2
+
+# Build rule for target.
+OpenGl_05_ex_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_05_ex_2
+.PHONY : OpenGl_05_ex_2
+
+# fast build rule for target.
+OpenGl_05_ex_2/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_2.dir/build.make CMakeFiles/OpenGl_05_ex_2.dir/build
+.PHONY : OpenGl_05_ex_2/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_02_ex_2
+
+# Build rule for target.
+OpenGl_02_ex_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_ex_2
+.PHONY : OpenGl_02_ex_2
+
+# fast build rule for target.
+OpenGl_02_ex_2/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/build
+.PHONY : OpenGl_02_ex_2/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_02_ex_1
+
+# Build rule for target.
+OpenGl_02_ex_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_ex_1
+.PHONY : OpenGl_02_ex_1
+
+# fast build rule for target.
+OpenGl_02_ex_1/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/build
+.PHONY : OpenGl_02_ex_1/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_03_uniform
+
+# Build rule for target.
+OpenGl_03_uniform: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_uniform
+.PHONY : OpenGl_03_uniform
+
+# fast build rule for target.
+OpenGl_03_uniform/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/build
+.PHONY : OpenGl_03_uniform/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_05_ex_1
+
+# Build rule for target.
+OpenGl_05_ex_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_05_ex_1
+.PHONY : OpenGl_05_ex_1
+
+# fast build rule for target.
+OpenGl_05_ex_1/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_1.dir/build.make CMakeFiles/OpenGl_05_ex_1.dir/build
+.PHONY : OpenGl_05_ex_1/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_02_triangle
+
+# Build rule for target.
+OpenGl_02_triangle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_triangle
+.PHONY : OpenGl_02_triangle
+
+# fast build rule for target.
+OpenGl_02_triangle/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/build
+.PHONY : OpenGl_02_triangle/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_04_mix_texture
+
+# Build rule for target.
+OpenGl_04_mix_texture: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_mix_texture
+.PHONY : OpenGl_04_mix_texture
+
+# fast build rule for target.
+OpenGl_04_mix_texture/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/build
+.PHONY : OpenGl_04_mix_texture/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_03_ex_3
+
+# Build rule for target.
+OpenGl_03_ex_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_ex_3
+.PHONY : OpenGl_03_ex_3
+
+# fast build rule for target.
+OpenGl_03_ex_3/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/build
+.PHONY : OpenGl_03_ex_3/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_07_camera_look_at
+
+# Build rule for target.
+OpenGl_07_camera_look_at: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_07_camera_look_at
+.PHONY : OpenGl_07_camera_look_at
+
+# fast build rule for target.
+OpenGl_07_camera_look_at/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_look_at.dir/build.make CMakeFiles/OpenGl_07_camera_look_at.dir/build
+.PHONY : OpenGl_07_camera_look_at/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_04_ex_4
+
+# Build rule for target.
+OpenGl_04_ex_4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_ex_4
+.PHONY : OpenGl_04_ex_4
+
+# fast build rule for target.
+OpenGl_04_ex_4/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/build
+.PHONY : OpenGl_04_ex_4/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_04_mix_color
+
+# Build rule for target.
+OpenGl_04_mix_color: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_mix_color
+.PHONY : OpenGl_04_mix_color
+
+# fast build rule for target.
+OpenGl_04_mix_color/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/build
+.PHONY : OpenGl_04_mix_color/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_03_interpolation
+
+# Build rule for target.
+OpenGl_03_interpolation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_interpolation
+.PHONY : OpenGl_03_interpolation
+
+# fast build rule for target.
+OpenGl_03_interpolation/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/build
+.PHONY : OpenGl_03_interpolation/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_04_ex_2
+
+# Build rule for target.
+OpenGl_04_ex_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_ex_2
+.PHONY : OpenGl_04_ex_2
+
+# fast build rule for target.
+OpenGl_04_ex_2/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/build
+.PHONY : OpenGl_04_ex_2/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_05_rotate
+
+# Build rule for target.
+OpenGl_05_rotate: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_05_rotate
+.PHONY : OpenGl_05_rotate
+
+# fast build rule for target.
+OpenGl_05_rotate/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate.dir/build.make CMakeFiles/OpenGl_05_rotate.dir/build
+.PHONY : OpenGl_05_rotate/fast
+
+#=============================================================================
 # Target rules for targets named OpenGl_03_ex_1
 
 # Build rule for target.
@@ -343,6 +382,97 @@ OpenGl_03_ex_1: cmake_check_build_system
 OpenGl_03_ex_1/fast:
 	$(MAKE) -f CMakeFiles/OpenGl_03_ex_1.dir/build.make CMakeFiles/OpenGl_03_ex_1.dir/build
 .PHONY : OpenGl_03_ex_1/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_01
+
+# Build rule for target.
+OpenGl_01: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_01
+.PHONY : OpenGl_01
+
+# fast build rule for target.
+OpenGl_01/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/build
+.PHONY : OpenGl_01/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_05_rotate_with_time
+
+# Build rule for target.
+OpenGl_05_rotate_with_time: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_05_rotate_with_time
+.PHONY : OpenGl_05_rotate_with_time
+
+# fast build rule for target.
+OpenGl_05_rotate_with_time/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate_with_time.dir/build.make CMakeFiles/OpenGl_05_rotate_with_time.dir/build
+.PHONY : OpenGl_05_rotate_with_time/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_03_class
+
+# Build rule for target.
+OpenGl_03_class: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_class
+.PHONY : OpenGl_03_class
+
+# fast build rule for target.
+OpenGl_03_class/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/build
+.PHONY : OpenGl_03_class/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_04_ex_1
+
+# Build rule for target.
+OpenGl_04_ex_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_ex_1
+.PHONY : OpenGl_04_ex_1
+
+# fast build rule for target.
+OpenGl_04_ex_1/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/build
+.PHONY : OpenGl_04_ex_1/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_04_ex_3
+
+# Build rule for target.
+OpenGl_04_ex_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_04_ex_3
+.PHONY : OpenGl_04_ex_3
+
+# fast build rule for target.
+OpenGl_04_ex_3/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/build
+.PHONY : OpenGl_04_ex_3/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_06_go_3d
+
+# Build rule for target.
+OpenGl_06_go_3d: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_06_go_3d
+.PHONY : OpenGl_06_go_3d
+
+# fast build rule for target.
+OpenGl_06_go_3d/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_06_go_3d.dir/build.make CMakeFiles/OpenGl_06_go_3d.dir/build
+.PHONY : OpenGl_06_go_3d/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_06_more_3d
+
+# Build rule for target.
+OpenGl_06_more_3d: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_06_more_3d
+.PHONY : OpenGl_06_more_3d
+
+# fast build rule for target.
+OpenGl_06_more_3d/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_3d.dir/build.make CMakeFiles/OpenGl_06_more_3d.dir/build
+.PHONY : OpenGl_06_more_3d/fast
 
 #=============================================================================
 # Target rules for targets named OpenGl_03_ex_2
@@ -358,17 +488,43 @@ OpenGl_03_ex_2/fast:
 .PHONY : OpenGl_03_ex_2/fast
 
 #=============================================================================
-# Target rules for targets named OpenGl_03_ex_3
+# Target rules for targets named OpenGl_02_rectangle
 
 # Build rule for target.
-OpenGl_03_ex_3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_03_ex_3
-.PHONY : OpenGl_03_ex_3
+OpenGl_02_rectangle: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_02_rectangle
+.PHONY : OpenGl_02_rectangle
 
 # fast build rule for target.
-OpenGl_03_ex_3/fast:
-	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/build
-.PHONY : OpenGl_03_ex_3/fast
+OpenGl_02_rectangle/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/build
+.PHONY : OpenGl_02_rectangle/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_06_more_cubes
+
+# Build rule for target.
+OpenGl_06_more_cubes: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_06_more_cubes
+.PHONY : OpenGl_06_more_cubes
+
+# fast build rule for target.
+OpenGl_06_more_cubes/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_cubes.dir/build.make CMakeFiles/OpenGl_06_more_cubes.dir/build
+.PHONY : OpenGl_06_more_cubes/fast
+
+#=============================================================================
+# Target rules for targets named OpenGl_06_ex_3
+
+# Build rule for target.
+OpenGl_06_ex_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenGl_06_ex_3
+.PHONY : OpenGl_06_ex_3
+
+# fast build rule for target.
+OpenGl_06_ex_3/fast:
+	$(MAKE) -f CMakeFiles/OpenGl_06_ex_3.dir/build.make CMakeFiles/OpenGl_06_ex_3.dir/build
+.PHONY : OpenGl_06_ex_3/fast
 
 01_hello_window/main.o: 01_hello_window/main.cpp.o
 
@@ -910,32 +1066,368 @@ OpenGl_03_ex_3/fast:
 	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/04_texture/mix_texture/main.cpp.s
 .PHONY : 04_texture/mix_texture/main.cpp.s
 
+05_trans/ex_1/main.o: 05_trans/ex_1/main.cpp.o
+
+.PHONY : 05_trans/ex_1/main.o
+
+# target to build an object file
+05_trans/ex_1/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_1.dir/build.make CMakeFiles/OpenGl_05_ex_1.dir/05_trans/ex_1/main.cpp.o
+.PHONY : 05_trans/ex_1/main.cpp.o
+
+05_trans/ex_1/main.i: 05_trans/ex_1/main.cpp.i
+
+.PHONY : 05_trans/ex_1/main.i
+
+# target to preprocess a source file
+05_trans/ex_1/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_1.dir/build.make CMakeFiles/OpenGl_05_ex_1.dir/05_trans/ex_1/main.cpp.i
+.PHONY : 05_trans/ex_1/main.cpp.i
+
+05_trans/ex_1/main.s: 05_trans/ex_1/main.cpp.s
+
+.PHONY : 05_trans/ex_1/main.s
+
+# target to generate assembly for a file
+05_trans/ex_1/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_1.dir/build.make CMakeFiles/OpenGl_05_ex_1.dir/05_trans/ex_1/main.cpp.s
+.PHONY : 05_trans/ex_1/main.cpp.s
+
+05_trans/ex_2/main.o: 05_trans/ex_2/main.cpp.o
+
+.PHONY : 05_trans/ex_2/main.o
+
+# target to build an object file
+05_trans/ex_2/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_2.dir/build.make CMakeFiles/OpenGl_05_ex_2.dir/05_trans/ex_2/main.cpp.o
+.PHONY : 05_trans/ex_2/main.cpp.o
+
+05_trans/ex_2/main.i: 05_trans/ex_2/main.cpp.i
+
+.PHONY : 05_trans/ex_2/main.i
+
+# target to preprocess a source file
+05_trans/ex_2/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_2.dir/build.make CMakeFiles/OpenGl_05_ex_2.dir/05_trans/ex_2/main.cpp.i
+.PHONY : 05_trans/ex_2/main.cpp.i
+
+05_trans/ex_2/main.s: 05_trans/ex_2/main.cpp.s
+
+.PHONY : 05_trans/ex_2/main.s
+
+# target to generate assembly for a file
+05_trans/ex_2/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_2.dir/build.make CMakeFiles/OpenGl_05_ex_2.dir/05_trans/ex_2/main.cpp.s
+.PHONY : 05_trans/ex_2/main.cpp.s
+
+05_trans/rotate/main.o: 05_trans/rotate/main.cpp.o
+
+.PHONY : 05_trans/rotate/main.o
+
+# target to build an object file
+05_trans/rotate/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate.dir/build.make CMakeFiles/OpenGl_05_rotate.dir/05_trans/rotate/main.cpp.o
+.PHONY : 05_trans/rotate/main.cpp.o
+
+05_trans/rotate/main.i: 05_trans/rotate/main.cpp.i
+
+.PHONY : 05_trans/rotate/main.i
+
+# target to preprocess a source file
+05_trans/rotate/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate.dir/build.make CMakeFiles/OpenGl_05_rotate.dir/05_trans/rotate/main.cpp.i
+.PHONY : 05_trans/rotate/main.cpp.i
+
+05_trans/rotate/main.s: 05_trans/rotate/main.cpp.s
+
+.PHONY : 05_trans/rotate/main.s
+
+# target to generate assembly for a file
+05_trans/rotate/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate.dir/build.make CMakeFiles/OpenGl_05_rotate.dir/05_trans/rotate/main.cpp.s
+.PHONY : 05_trans/rotate/main.cpp.s
+
+05_trans/rotate_with_time/main.o: 05_trans/rotate_with_time/main.cpp.o
+
+.PHONY : 05_trans/rotate_with_time/main.o
+
+# target to build an object file
+05_trans/rotate_with_time/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate_with_time.dir/build.make CMakeFiles/OpenGl_05_rotate_with_time.dir/05_trans/rotate_with_time/main.cpp.o
+.PHONY : 05_trans/rotate_with_time/main.cpp.o
+
+05_trans/rotate_with_time/main.i: 05_trans/rotate_with_time/main.cpp.i
+
+.PHONY : 05_trans/rotate_with_time/main.i
+
+# target to preprocess a source file
+05_trans/rotate_with_time/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate_with_time.dir/build.make CMakeFiles/OpenGl_05_rotate_with_time.dir/05_trans/rotate_with_time/main.cpp.i
+.PHONY : 05_trans/rotate_with_time/main.cpp.i
+
+05_trans/rotate_with_time/main.s: 05_trans/rotate_with_time/main.cpp.s
+
+.PHONY : 05_trans/rotate_with_time/main.s
+
+# target to generate assembly for a file
+05_trans/rotate_with_time/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate_with_time.dir/build.make CMakeFiles/OpenGl_05_rotate_with_time.dir/05_trans/rotate_with_time/main.cpp.s
+.PHONY : 05_trans/rotate_with_time/main.cpp.s
+
+06_coor/ex_3/main.o: 06_coor/ex_3/main.cpp.o
+
+.PHONY : 06_coor/ex_3/main.o
+
+# target to build an object file
+06_coor/ex_3/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_06_ex_3.dir/build.make CMakeFiles/OpenGl_06_ex_3.dir/06_coor/ex_3/main.cpp.o
+.PHONY : 06_coor/ex_3/main.cpp.o
+
+06_coor/ex_3/main.i: 06_coor/ex_3/main.cpp.i
+
+.PHONY : 06_coor/ex_3/main.i
+
+# target to preprocess a source file
+06_coor/ex_3/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_06_ex_3.dir/build.make CMakeFiles/OpenGl_06_ex_3.dir/06_coor/ex_3/main.cpp.i
+.PHONY : 06_coor/ex_3/main.cpp.i
+
+06_coor/ex_3/main.s: 06_coor/ex_3/main.cpp.s
+
+.PHONY : 06_coor/ex_3/main.s
+
+# target to generate assembly for a file
+06_coor/ex_3/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_06_ex_3.dir/build.make CMakeFiles/OpenGl_06_ex_3.dir/06_coor/ex_3/main.cpp.s
+.PHONY : 06_coor/ex_3/main.cpp.s
+
+06_coor/go_3d/main.o: 06_coor/go_3d/main.cpp.o
+
+.PHONY : 06_coor/go_3d/main.o
+
+# target to build an object file
+06_coor/go_3d/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_06_go_3d.dir/build.make CMakeFiles/OpenGl_06_go_3d.dir/06_coor/go_3d/main.cpp.o
+.PHONY : 06_coor/go_3d/main.cpp.o
+
+06_coor/go_3d/main.i: 06_coor/go_3d/main.cpp.i
+
+.PHONY : 06_coor/go_3d/main.i
+
+# target to preprocess a source file
+06_coor/go_3d/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_06_go_3d.dir/build.make CMakeFiles/OpenGl_06_go_3d.dir/06_coor/go_3d/main.cpp.i
+.PHONY : 06_coor/go_3d/main.cpp.i
+
+06_coor/go_3d/main.s: 06_coor/go_3d/main.cpp.s
+
+.PHONY : 06_coor/go_3d/main.s
+
+# target to generate assembly for a file
+06_coor/go_3d/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_06_go_3d.dir/build.make CMakeFiles/OpenGl_06_go_3d.dir/06_coor/go_3d/main.cpp.s
+.PHONY : 06_coor/go_3d/main.cpp.s
+
+06_coor/more_3d/main.o: 06_coor/more_3d/main.cpp.o
+
+.PHONY : 06_coor/more_3d/main.o
+
+# target to build an object file
+06_coor/more_3d/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_3d.dir/build.make CMakeFiles/OpenGl_06_more_3d.dir/06_coor/more_3d/main.cpp.o
+.PHONY : 06_coor/more_3d/main.cpp.o
+
+06_coor/more_3d/main.i: 06_coor/more_3d/main.cpp.i
+
+.PHONY : 06_coor/more_3d/main.i
+
+# target to preprocess a source file
+06_coor/more_3d/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_3d.dir/build.make CMakeFiles/OpenGl_06_more_3d.dir/06_coor/more_3d/main.cpp.i
+.PHONY : 06_coor/more_3d/main.cpp.i
+
+06_coor/more_3d/main.s: 06_coor/more_3d/main.cpp.s
+
+.PHONY : 06_coor/more_3d/main.s
+
+# target to generate assembly for a file
+06_coor/more_3d/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_3d.dir/build.make CMakeFiles/OpenGl_06_more_3d.dir/06_coor/more_3d/main.cpp.s
+.PHONY : 06_coor/more_3d/main.cpp.s
+
+06_coor/more_cubes/main.o: 06_coor/more_cubes/main.cpp.o
+
+.PHONY : 06_coor/more_cubes/main.o
+
+# target to build an object file
+06_coor/more_cubes/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_cubes.dir/build.make CMakeFiles/OpenGl_06_more_cubes.dir/06_coor/more_cubes/main.cpp.o
+.PHONY : 06_coor/more_cubes/main.cpp.o
+
+06_coor/more_cubes/main.i: 06_coor/more_cubes/main.cpp.i
+
+.PHONY : 06_coor/more_cubes/main.i
+
+# target to preprocess a source file
+06_coor/more_cubes/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_cubes.dir/build.make CMakeFiles/OpenGl_06_more_cubes.dir/06_coor/more_cubes/main.cpp.i
+.PHONY : 06_coor/more_cubes/main.cpp.i
+
+06_coor/more_cubes/main.s: 06_coor/more_cubes/main.cpp.s
+
+.PHONY : 06_coor/more_cubes/main.s
+
+# target to generate assembly for a file
+06_coor/more_cubes/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_cubes.dir/build.make CMakeFiles/OpenGl_06_more_cubes.dir/06_coor/more_cubes/main.cpp.s
+.PHONY : 06_coor/more_cubes/main.cpp.s
+
+07_camera/ex_1/main.o: 07_camera/ex_1/main.cpp.o
+
+.PHONY : 07_camera/ex_1/main.o
+
+# target to build an object file
+07_camera/ex_1/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_1.dir/build.make CMakeFiles/OpenGl_07_camera_ex_1.dir/07_camera/ex_1/main.cpp.o
+.PHONY : 07_camera/ex_1/main.cpp.o
+
+07_camera/ex_1/main.i: 07_camera/ex_1/main.cpp.i
+
+.PHONY : 07_camera/ex_1/main.i
+
+# target to preprocess a source file
+07_camera/ex_1/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_1.dir/build.make CMakeFiles/OpenGl_07_camera_ex_1.dir/07_camera/ex_1/main.cpp.i
+.PHONY : 07_camera/ex_1/main.cpp.i
+
+07_camera/ex_1/main.s: 07_camera/ex_1/main.cpp.s
+
+.PHONY : 07_camera/ex_1/main.s
+
+# target to generate assembly for a file
+07_camera/ex_1/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_1.dir/build.make CMakeFiles/OpenGl_07_camera_ex_1.dir/07_camera/ex_1/main.cpp.s
+.PHONY : 07_camera/ex_1/main.cpp.s
+
+07_camera/ex_2/main.o: 07_camera/ex_2/main.cpp.o
+
+.PHONY : 07_camera/ex_2/main.o
+
+# target to build an object file
+07_camera/ex_2/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_2.dir/build.make CMakeFiles/OpenGl_07_camera_ex_2.dir/07_camera/ex_2/main.cpp.o
+.PHONY : 07_camera/ex_2/main.cpp.o
+
+07_camera/ex_2/main.i: 07_camera/ex_2/main.cpp.i
+
+.PHONY : 07_camera/ex_2/main.i
+
+# target to preprocess a source file
+07_camera/ex_2/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_2.dir/build.make CMakeFiles/OpenGl_07_camera_ex_2.dir/07_camera/ex_2/main.cpp.i
+.PHONY : 07_camera/ex_2/main.cpp.i
+
+07_camera/ex_2/main.s: 07_camera/ex_2/main.cpp.s
+
+.PHONY : 07_camera/ex_2/main.s
+
+# target to generate assembly for a file
+07_camera/ex_2/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_2.dir/build.make CMakeFiles/OpenGl_07_camera_ex_2.dir/07_camera/ex_2/main.cpp.s
+.PHONY : 07_camera/ex_2/main.cpp.s
+
+07_camera/look_at/main.o: 07_camera/look_at/main.cpp.o
+
+.PHONY : 07_camera/look_at/main.o
+
+# target to build an object file
+07_camera/look_at/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_look_at.dir/build.make CMakeFiles/OpenGl_07_camera_look_at.dir/07_camera/look_at/main.cpp.o
+.PHONY : 07_camera/look_at/main.cpp.o
+
+07_camera/look_at/main.i: 07_camera/look_at/main.cpp.i
+
+.PHONY : 07_camera/look_at/main.i
+
+# target to preprocess a source file
+07_camera/look_at/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_look_at.dir/build.make CMakeFiles/OpenGl_07_camera_look_at.dir/07_camera/look_at/main.cpp.i
+.PHONY : 07_camera/look_at/main.cpp.i
+
+07_camera/look_at/main.s: 07_camera/look_at/main.cpp.s
+
+.PHONY : 07_camera/look_at/main.s
+
+# target to generate assembly for a file
+07_camera/look_at/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_look_at.dir/build.make CMakeFiles/OpenGl_07_camera_look_at.dir/07_camera/look_at/main.cpp.s
+.PHONY : 07_camera/look_at/main.cpp.s
+
+07_camera/walk_around/main.o: 07_camera/walk_around/main.cpp.o
+
+.PHONY : 07_camera/walk_around/main.o
+
+# target to build an object file
+07_camera/walk_around/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_walk_around.dir/build.make CMakeFiles/OpenGl_07_camera_walk_around.dir/07_camera/walk_around/main.cpp.o
+.PHONY : 07_camera/walk_around/main.cpp.o
+
+07_camera/walk_around/main.i: 07_camera/walk_around/main.cpp.i
+
+.PHONY : 07_camera/walk_around/main.i
+
+# target to preprocess a source file
+07_camera/walk_around/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_walk_around.dir/build.make CMakeFiles/OpenGl_07_camera_walk_around.dir/07_camera/walk_around/main.cpp.i
+.PHONY : 07_camera/walk_around/main.cpp.i
+
+07_camera/walk_around/main.s: 07_camera/walk_around/main.cpp.s
+
+.PHONY : 07_camera/walk_around/main.s
+
+# target to generate assembly for a file
+07_camera/walk_around/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_walk_around.dir/build.make CMakeFiles/OpenGl_07_camera_walk_around.dir/07_camera/walk_around/main.cpp.s
+.PHONY : 07_camera/walk_around/main.cpp.s
+
 glad.o: glad.c.o
 
 .PHONY : glad.o
 
 # target to build an object file
 glad.c.o:
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_2.dir/build.make CMakeFiles/OpenGl_07_camera_ex_2.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_1.dir/build.make CMakeFiles/OpenGl_07_camera_ex_1.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_walk_around.dir/build.make CMakeFiles/OpenGl_07_camera_walk_around.dir/glad.c.o
 	$(MAKE) -f CMakeFiles/OpenGl_03_Ins_outs.dir/build.make CMakeFiles/OpenGl_03_Ins_outs.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_03_ex_1.dir/build.make CMakeFiles/OpenGl_03_ex_1.dir/glad.c.o
-	$(MAKE) -f CMakeFiles/OpenGl_03_ex_2.dir/build.make CMakeFiles/OpenGl_03_ex_2.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_2.dir/build.make CMakeFiles/OpenGl_05_ex_2.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_1.dir/build.make CMakeFiles/OpenGl_05_ex_1.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/glad.c.o
 	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_look_at.dir/build.make CMakeFiles/OpenGl_07_camera_look_at.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate.dir/build.make CMakeFiles/OpenGl_05_rotate.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_1.dir/build.make CMakeFiles/OpenGl_03_ex_1.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate_with_time.dir/build.make CMakeFiles/OpenGl_05_rotate_with_time.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_06_go_3d.dir/build.make CMakeFiles/OpenGl_06_go_3d.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_3d.dir/build.make CMakeFiles/OpenGl_06_more_3d.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_2.dir/build.make CMakeFiles/OpenGl_03_ex_2.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_cubes.dir/build.make CMakeFiles/OpenGl_06_more_cubes.dir/glad.c.o
+	$(MAKE) -f CMakeFiles/OpenGl_06_ex_3.dir/build.make CMakeFiles/OpenGl_06_ex_3.dir/glad.c.o
 .PHONY : glad.c.o
 
 glad.i: glad.c.i
@@ -944,26 +1436,38 @@ glad.i: glad.c.i
 
 # target to preprocess a source file
 glad.c.i:
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_2.dir/build.make CMakeFiles/OpenGl_07_camera_ex_2.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_1.dir/build.make CMakeFiles/OpenGl_07_camera_ex_1.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_walk_around.dir/build.make CMakeFiles/OpenGl_07_camera_walk_around.dir/glad.c.i
 	$(MAKE) -f CMakeFiles/OpenGl_03_Ins_outs.dir/build.make CMakeFiles/OpenGl_03_Ins_outs.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_03_ex_1.dir/build.make CMakeFiles/OpenGl_03_ex_1.dir/glad.c.i
-	$(MAKE) -f CMakeFiles/OpenGl_03_ex_2.dir/build.make CMakeFiles/OpenGl_03_ex_2.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_2.dir/build.make CMakeFiles/OpenGl_05_ex_2.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_1.dir/build.make CMakeFiles/OpenGl_05_ex_1.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/glad.c.i
 	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_look_at.dir/build.make CMakeFiles/OpenGl_07_camera_look_at.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate.dir/build.make CMakeFiles/OpenGl_05_rotate.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_1.dir/build.make CMakeFiles/OpenGl_03_ex_1.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate_with_time.dir/build.make CMakeFiles/OpenGl_05_rotate_with_time.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_06_go_3d.dir/build.make CMakeFiles/OpenGl_06_go_3d.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_3d.dir/build.make CMakeFiles/OpenGl_06_more_3d.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_2.dir/build.make CMakeFiles/OpenGl_03_ex_2.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_cubes.dir/build.make CMakeFiles/OpenGl_06_more_cubes.dir/glad.c.i
+	$(MAKE) -f CMakeFiles/OpenGl_06_ex_3.dir/build.make CMakeFiles/OpenGl_06_ex_3.dir/glad.c.i
 .PHONY : glad.c.i
 
 glad.s: glad.c.s
@@ -972,26 +1476,38 @@ glad.s: glad.c.s
 
 # target to generate assembly for a file
 glad.c.s:
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_2.dir/build.make CMakeFiles/OpenGl_07_camera_ex_2.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_ex_1.dir/build.make CMakeFiles/OpenGl_07_camera_ex_1.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_walk_around.dir/build.make CMakeFiles/OpenGl_07_camera_walk_around.dir/glad.c.s
 	$(MAKE) -f CMakeFiles/OpenGl_03_Ins_outs.dir/build.make CMakeFiles/OpenGl_03_Ins_outs.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_03_ex_1.dir/build.make CMakeFiles/OpenGl_03_ex_1.dir/glad.c.s
-	$(MAKE) -f CMakeFiles/OpenGl_03_ex_2.dir/build.make CMakeFiles/OpenGl_03_ex_2.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_3.dir/build.make CMakeFiles/OpenGl_02_ex_3.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_04_generate_texture.dir/build.make CMakeFiles/OpenGl_04_generate_texture.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_2.dir/build.make CMakeFiles/OpenGl_05_ex_2.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_2.dir/build.make CMakeFiles/OpenGl_02_ex_2.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_02_ex_1.dir/build.make CMakeFiles/OpenGl_02_ex_1.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_03_uniform.dir/build.make CMakeFiles/OpenGl_03_uniform.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_05_ex_1.dir/build.make CMakeFiles/OpenGl_05_ex_1.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_02_triangle.dir/build.make CMakeFiles/OpenGl_02_triangle.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_texture.dir/build.make CMakeFiles/OpenGl_04_mix_texture.dir/glad.c.s
 	$(MAKE) -f CMakeFiles/OpenGl_03_ex_3.dir/build.make CMakeFiles/OpenGl_03_ex_3.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_07_camera_look_at.dir/build.make CMakeFiles/OpenGl_07_camera_look_at.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_4.dir/build.make CMakeFiles/OpenGl_04_ex_4.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_04_mix_color.dir/build.make CMakeFiles/OpenGl_04_mix_color.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_03_interpolation.dir/build.make CMakeFiles/OpenGl_03_interpolation.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_2.dir/build.make CMakeFiles/OpenGl_04_ex_2.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate.dir/build.make CMakeFiles/OpenGl_05_rotate.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_1.dir/build.make CMakeFiles/OpenGl_03_ex_1.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_01.dir/build.make CMakeFiles/OpenGl_01.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_05_rotate_with_time.dir/build.make CMakeFiles/OpenGl_05_rotate_with_time.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_03_class.dir/build.make CMakeFiles/OpenGl_03_class.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_1.dir/build.make CMakeFiles/OpenGl_04_ex_1.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_04_ex_3.dir/build.make CMakeFiles/OpenGl_04_ex_3.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_06_go_3d.dir/build.make CMakeFiles/OpenGl_06_go_3d.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_3d.dir/build.make CMakeFiles/OpenGl_06_more_3d.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_03_ex_2.dir/build.make CMakeFiles/OpenGl_03_ex_2.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_02_rectangle.dir/build.make CMakeFiles/OpenGl_02_rectangle.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_06_more_cubes.dir/build.make CMakeFiles/OpenGl_06_more_cubes.dir/glad.c.s
+	$(MAKE) -f CMakeFiles/OpenGl_06_ex_3.dir/build.make CMakeFiles/OpenGl_06_ex_3.dir/glad.c.s
 .PHONY : glad.c.s
 
 # Help Target
@@ -1002,26 +1518,38 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... OpenGl_04_ex_3"
-	@echo "... OpenGl_04_ex_2"
-	@echo "... OpenGl_04_mix_color"
-	@echo "... OpenGl_04_ex_4"
-	@echo "... OpenGl_01"
-	@echo "... OpenGl_04_mix_texture"
-	@echo "... OpenGl_02_triangle"
-	@echo "... OpenGl_02_rectangle"
-	@echo "... OpenGl_04_ex_1"
-	@echo "... OpenGl_03_uniform"
-	@echo "... OpenGl_02_ex_1"
-	@echo "... OpenGl_03_interpolation"
-	@echo "... OpenGl_02_ex_2"
-	@echo "... OpenGl_04_generate_texture"
-	@echo "... OpenGl_03_class"
-	@echo "... OpenGl_02_ex_3"
+	@echo "... OpenGl_07_camera_ex_2"
+	@echo "... OpenGl_07_camera_ex_1"
+	@echo "... OpenGl_07_camera_walk_around"
 	@echo "... OpenGl_03_Ins_outs"
-	@echo "... OpenGl_03_ex_1"
-	@echo "... OpenGl_03_ex_2"
+	@echo "... OpenGl_02_ex_3"
+	@echo "... OpenGl_04_generate_texture"
+	@echo "... OpenGl_05_ex_2"
+	@echo "... OpenGl_02_ex_2"
+	@echo "... OpenGl_02_ex_1"
+	@echo "... OpenGl_03_uniform"
+	@echo "... OpenGl_05_ex_1"
+	@echo "... OpenGl_02_triangle"
+	@echo "... OpenGl_04_mix_texture"
 	@echo "... OpenGl_03_ex_3"
+	@echo "... OpenGl_07_camera_look_at"
+	@echo "... OpenGl_04_ex_4"
+	@echo "... OpenGl_04_mix_color"
+	@echo "... OpenGl_03_interpolation"
+	@echo "... OpenGl_04_ex_2"
+	@echo "... OpenGl_05_rotate"
+	@echo "... OpenGl_03_ex_1"
+	@echo "... OpenGl_01"
+	@echo "... OpenGl_05_rotate_with_time"
+	@echo "... OpenGl_03_class"
+	@echo "... OpenGl_04_ex_1"
+	@echo "... OpenGl_04_ex_3"
+	@echo "... OpenGl_06_go_3d"
+	@echo "... OpenGl_06_more_3d"
+	@echo "... OpenGl_03_ex_2"
+	@echo "... OpenGl_02_rectangle"
+	@echo "... OpenGl_06_more_cubes"
+	@echo "... OpenGl_06_ex_3"
 	@echo "... 01_hello_window/main.o"
 	@echo "... 01_hello_window/main.i"
 	@echo "... 01_hello_window/main.s"
@@ -1082,6 +1610,42 @@ help:
 	@echo "... 04_texture/mix_texture/main.o"
 	@echo "... 04_texture/mix_texture/main.i"
 	@echo "... 04_texture/mix_texture/main.s"
+	@echo "... 05_trans/ex_1/main.o"
+	@echo "... 05_trans/ex_1/main.i"
+	@echo "... 05_trans/ex_1/main.s"
+	@echo "... 05_trans/ex_2/main.o"
+	@echo "... 05_trans/ex_2/main.i"
+	@echo "... 05_trans/ex_2/main.s"
+	@echo "... 05_trans/rotate/main.o"
+	@echo "... 05_trans/rotate/main.i"
+	@echo "... 05_trans/rotate/main.s"
+	@echo "... 05_trans/rotate_with_time/main.o"
+	@echo "... 05_trans/rotate_with_time/main.i"
+	@echo "... 05_trans/rotate_with_time/main.s"
+	@echo "... 06_coor/ex_3/main.o"
+	@echo "... 06_coor/ex_3/main.i"
+	@echo "... 06_coor/ex_3/main.s"
+	@echo "... 06_coor/go_3d/main.o"
+	@echo "... 06_coor/go_3d/main.i"
+	@echo "... 06_coor/go_3d/main.s"
+	@echo "... 06_coor/more_3d/main.o"
+	@echo "... 06_coor/more_3d/main.i"
+	@echo "... 06_coor/more_3d/main.s"
+	@echo "... 06_coor/more_cubes/main.o"
+	@echo "... 06_coor/more_cubes/main.i"
+	@echo "... 06_coor/more_cubes/main.s"
+	@echo "... 07_camera/ex_1/main.o"
+	@echo "... 07_camera/ex_1/main.i"
+	@echo "... 07_camera/ex_1/main.s"
+	@echo "... 07_camera/ex_2/main.o"
+	@echo "... 07_camera/ex_2/main.i"
+	@echo "... 07_camera/ex_2/main.s"
+	@echo "... 07_camera/look_at/main.o"
+	@echo "... 07_camera/look_at/main.i"
+	@echo "... 07_camera/look_at/main.s"
+	@echo "... 07_camera/walk_around/main.o"
+	@echo "... 07_camera/walk_around/main.i"
+	@echo "... 07_camera/walk_around/main.s"
 	@echo "... glad.o"
 	@echo "... glad.i"
 	@echo "... glad.s"

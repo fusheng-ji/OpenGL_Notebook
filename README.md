@@ -2,7 +2,7 @@
 typora-root-url: ./
 ---
 
-# OpenGL_Notebook
+# OpenGL Notebook
 ![opengl](pic/opengl.jpg)
 
 ## References
@@ -1802,10 +1802,1019 @@ After telling `stb_image.h` to flip the y-axis when loading images you should ge
 
 - Make sure **only** the happy face looks in the other/reverse direction by changing the fragment shader: [Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/4.3.textures_exercise1/textures_exercise1.cpp). [My solution](code/04_texture/ex_1/fragment.glsl)
 - Experiment with the different texture wrapping methods by specifying texture coordinates in the range `0.0f` to `2.0f` instead of `0.0f` to `1.0f`. See if you can display 4 smiley faces on a single container image clamped at its edge: [Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/4.4.textures_exercise2/textures_exercise2.cpp), [result](https://learnopengl.com/img/getting-started/textures_exercise2.png). See if you can experiment with other wrapping methods as well. [My solution](code/04_texture/ex_2/main.cpp)
-- Try to display only the center pixels of the texture image on the  rectangle in such a way that the individual pixels are getting visible  by changing the texture coordinates. Try to set the texture filtering  method to `GL_NEAREST` to see the pixels more clearly: [Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/4.5.textures_exercise3/textures_exercise3.cpp). [My solution](code/04_texture/ex_3/main.cpp)
-- Use a uniform variable as the mix function's third  parameter to vary the amount  the two textures are visible. Use the up  and down arrow keys to change how much the container or the smiley face  is visible: [Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/4.6.textures_exercise4/textures_exercise4.cpp).[My solution](code/04_texture/ex_4/main.cpp)
+- Try to display only the center pixels of the texture image on the rectangle in such a way that the individual pixels are getting visible by changing the texture coordinates. Try to set the texture filtering method to `GL_NEAREST` to see the pixels more clearly: [Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/4.5.textures_exercise3/textures_exercise3.cpp). [My solution](code/04_texture/ex_3/main.cpp)
+- Use a uniform variable as the mix function's third parameter to vary the amount the two textures are visible. Use the up and down arrow keys to change how much the container or the smiley face is visible: [Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/4.6.textures_exercise4/textures_exercise4.cpp).[My solution](code/04_texture/ex_4/main.cpp)
 
-## Lighting
+### Transformations
+
+#### Vectors
+
+$$\bar{v} = \begin{pmatrix} \color{red}x \\ \color{green}y \\ \color{blue}z \end{pmatrix}$$
+
+##### Scalar vector operations
+
+A scalar is a single digit. When adding/subtracting/multiplying or dividing a vector with a scalar we simply add/subtract/multiply or divide each element of the vector by the scalar. For addition it would look like this:
+
+$$\begin{pmatrix} \color{red}1 \\ \color{green}2 \\ \color{blue}3 \end{pmatrix} + x \rightarrow \begin{pmatrix} \color{red}1 \\ \color{green}2 \\ \color{blue}3 \end{pmatrix} + \begin{pmatrix} x \\ x \\ x \end{pmatrix}  = \begin{pmatrix} \color{red}1 + x \\ \color{green}2 + x \\ \color{blue}3 + x \end{pmatrix}$$
+
+Where + can be +,−,⋅ or ÷ where ⋅ is the multiplication operator. 
+
+##### Vector negation
+
+Negating a vector results in a vector in the reversed direction. A vector pointing north-east would point south-west after negation. To negate a vector we add a minus-sign to each component (you can also represent it as a scalar-vector multiplication with a scalar value of `-1`): 
+
+$$-\bar{v} = -\begin{pmatrix} \color{red}{v_x} \\ \color{blue}{v_y} \\ \color{green}{v_z} \end{pmatrix} = \begin{pmatrix} -\color{red}{v_x} \\ -\color{blue}{v_y} \\ -\color{green}{v_z} \end{pmatrix}$$
+
+##### Addition and subtraction
+
+Addition of two vectors is defined as component-wise addition, that is each component of one vector is added to the same component of the other vector like so:
+
+$$\bar{v} = \begin{pmatrix} \color{red}1 \\ \color{green}2 \\ \color{blue}3 \end{pmatrix}, \bar{k} = \begin{pmatrix} \color{red}4 \\ \color{green}5 \\ \color{blue}6 \end{pmatrix} \rightarrow \bar{v} + \bar{k} = \begin{pmatrix} \color{red}1 + \color{red}4 \\ \color{green}2 + \color{green}5 \\ \color{blue}3 + \color{blue}6 \end{pmatrix} = \begin{pmatrix} \color{red}5 \\ \color{green}7 \\ \color{blue}9 \end{pmatrix}$$
+
+Visually, it looks like this on vectors `v=(4,2)` and `k=(1,2)`, where the second vector is added on top of the first vector's end to find the end point of the resulting vector (head-to-tail method):
+
+![vectors_addition](pic/vectors_addition.png)
+
+Just like normal addition and subtraction, vector subtraction is the same as addition with a negated second vector:  
+
+$$\bar{v} = \begin{pmatrix} \color{red}{1} \\ \color{green}{2} \\ \color{blue}{3} \end{pmatrix}, \bar{k} = \begin{pmatrix} \color{red}{4} \\ \color{green}{5} \\ \color{blue}{6} \end{pmatrix} \rightarrow \bar{v} + -\bar{k} = \begin{pmatrix} \color{red}{1} + (-\color{red}{4}) \\ \color{green}{2} + (-\color{green}{5}) \\ \color{blue}{3} + (-\color{blue}{6}) \end{pmatrix} = \begin{pmatrix} -\color{red}{3} \\ -\color{green}{3} \\ -\color{blue}{3} \end{pmatrix}$$
+
+Subtracting two vectors from each other results in a vector that's the difference of the positions both vectors are pointing at. This proves useful in certain cases where we need to retrieve a vector that's the difference between two points.
+
+![vectors_subtraction](pic/vectors_subtraction.png)
+
+##### Length
+
+To retrieve the length/magnitude of a vector we use the Pythagoras theorem that you may remember from your math classes. A vector forms a triangle when you visualize its individual `x` and `y` component as two sides of a triangle:
+
+![vectors_triangle](pic/vectors_triangle.png)
+
+
+
+Since the length of the two sides `(x, y)` are known and we want to know the length of the tilted side *v*¯ we can calculate it using the Pythagoras theorem as:    
+
+$$||{\bar{v}}|| = \sqrt{\color{green}x^2 + \color{blue}y^2}$$
+
+Where $||{\bar{v}}||$is denoted as the length of vector $\bar{v}$. This is easily extended to 3D by adding $z^2$ to the equation.
+
+In this case the length of vector `(4, 2)` equals:   
+
+$$||\bar{v}|| = \sqrt{\color{green}4^2 + \color{blue}2^2} = \sqrt{\color{green}16 + \color{blue}4} = \sqrt{20} = 4.47$$
+
+Which is `4.47`.
+
+There is also a special type of vector that we call a **unit vector**. A unit vector has one extra property and that is that its length is exactly 1. We can calculate a unit vector $\hat{n}$ from any vector by dividing each of the vector's components by its length:  
+
+$$\hat{n}=\frac{\bar{v}}{||\bar{v}||}$$
+
+We call this normalizing a vector. Unit vectors are displayed with a little roof over their head and are generally easier to work with, especially when we only care about their directions (the direction does not change if we change a vector's length).
+
+##### Vector-vector multiplication
+
+we have two specific cases that we could choose from when multiplying: one is the dot product denoted as $\bar{v} \cdot \bar{k}$ and the other is the cross product denoted as $\bar{v} \times \bar{k}$.
+
+###### Dot product
+
+The dot product of two vectors is equal to the scalar product of their lengths times the cosine of the angle between them. If this sounds confusing take a look at its formula:  
+
+$$\bar{v} \cdot \bar{k} = ||\bar{v}|| \cdot ||\bar{k}|| \cdot \cos \theta$$
+
+###### Cross product
+
+![vectors_crossproduct](/pic/vectors_crossproduct.png)
+
+$$\begin{pmatrix} \color{red}{A_{x}} \\ \color{green}{A_{y}} \\ \color{blue}{A_{z}} \end{pmatrix} \times \begin{pmatrix} \color{red}{B_{x}} \\ \color{green}{B_{y}} \\ \color{blue}{B_{z}}  \end{pmatrix} = \begin{pmatrix} \color{green}{A_{y}} \cdot \color{blue}{B_{z}} - \color{blue}{A_{z}} \cdot \color{green}{B_{y}} \\ \color{blue}{A_{z}} \cdot \color{red}{B_{x}} - \color{red}{A_{x}} \cdot \color{blue}{B_{z}} \\ \color{red}{A_{x}} \cdot \color{green}{B_{y}} - \color{green}{A_{y}} \cdot \color{red}{B_{x}} \end{pmatrix}$$
+
+#### Matrices
+
+$$\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \end{bmatrix}$$
+
+Matrices are indexed by `(i,j)` where `i` is the row and `j` is the column, that is why the above matrix is called a 2x3 matrix (3 columns and 2 rows, also known as the dimensions of the matrix). This is the opposite of what you're used to when indexing 2D graphs as `(x,y)`. To retrieve the value 4 we would index it as `(2,1)` (second row, first column).
+
+##### Addition and subtraction
+
+$$\begin{bmatrix} \color{red}1 & \color{red}2 \\ \color{green}3 & \color{green}4 \end{bmatrix} + \begin{bmatrix} \color{red}5 & \color{red}6 \\ \color{green}7 & \color{green}8 \end{bmatrix} = \begin{bmatrix} \color{red}1 + \color{red}5 & \color{red}2 + \color{red}6 \\ \color{green}3 + \color{green}7 & \color{green}4 + \color{green}8 \end{bmatrix} = \begin{bmatrix} \color{red}6 & \color{red}8 \\ \color{green}{10} & \color{green}{12} \end{bmatrix}$$
+
+$$\begin{bmatrix} \color{red}4 & \color{red}2 \\ \color{green}1 & \color{green}6 \end{bmatrix} - \begin{bmatrix} \color{red}2 & \color{red}4 \\ \color{green}0 & \color{green}1 \end{bmatrix} = \begin{bmatrix} \color{red}4 - \color{red}2 & \color{red}2  - \color{red}4 \\ \color{green}1 - \color{green}0 & \color{green}6 - \color{green}1 \end{bmatrix} = \begin{bmatrix} \color{red}2 & -\color{red}2 \\ \color{green}1 & \color{green}5 \end{bmatrix}$$
+
+##### Matrix-scalar products
+
+$$\begin{bmatrix} \color{red}4 & \color{red}2 & \color{red}0 \\ \color{green}0 & \color{green}8 & \color{green}1 \\ \color{blue}0 & \color{blue}1 & \color{blue}0 \end{bmatrix} \cdot \begin{bmatrix} \color{red}4 & \color{green}2 & \color{blue}1 \\ \color{red}2 & \color{green}0 & \color{blue}4 \\ \color{red}9 & \color{green}4 & \color{blue}2 \end{bmatrix} = \begin{bmatrix} \color{red}4 \cdot \color{red}4 + \color{red}2 \cdot \color{red}2 + \color{red}0 \cdot \color{red}9 & \color{red}4 \cdot \color{green}2 + \color{red}2 \cdot \color{green}0 + \color{red}0 \cdot \color{green}4 & \color{red}4 \cdot \color{blue}1 + \color{red}2 \cdot \color{blue}4 + \color{red}0 \cdot \color{blue}2 \\ \color{green}0 \cdot \color{red}4 + \color{green}8 \cdot \color{red}2 + \color{green}1 \cdot \color{red}9 & \color{green}0 \cdot \color{green}2 + \color{green}8 \cdot \color{green}0 + \color{green}1 \cdot \color{green}4 & \color{green}0 \cdot \color{blue}1 + \color{green}8 \cdot \color{blue}4 + \color{green}1 \cdot \color{blue}2 \\ \color{blue}0 \cdot \color{red}4 + \color{blue}1 \cdot \color{red}2 + \color{blue}0 \cdot \color{red}9 & \color{blue}0 \cdot \color{green}2 + \color{blue}1 \cdot \color{green}0 + \color{blue}0 \cdot \color{green}4 & \color{blue}0 \cdot \color{blue}1 + \color{blue}1 \cdot \color{blue}4 + \color{blue}0 \cdot \color{blue}2 \end{bmatrix}  \\ = \begin{bmatrix} 20 & 8 & 12 \\ 25 & 4 & 34 \\ 2 & 0 & 4 \end{bmatrix}$$
+
+#### Matrix-Vector multiplication
+
+##### Identity matrix
+
+$$\begin{bmatrix} \color{red}1 & \color{red}0 & \color{red}0 & \color{red}0 \\ \color{green}0 & \color{green}1 & \color{green}0 & \color{green}0 \\ \color{blue}0 & \color{blue}0 & \color{blue}1 & \color{blue}0 \\ \color{purple}0 & \color{purple}0 & \color{purple}0 & \color{purple}1 \end{bmatrix} \cdot \begin{bmatrix} 1 \\ 2 \\ 3 \\ 4 \end{bmatrix} = \begin{bmatrix} \color{red}1 \cdot 1 \\ \color{green}1 \cdot 2 \\ \color{blue}1 \cdot 3 \\ \color{purple}1 \cdot 4 \end{bmatrix} = \begin{bmatrix} 1 \\ 2 \\ 3 \\ 4 \end{bmatrix}$$
+
+##### Scaling
+
+$$\begin{bmatrix} \color{red}{S_1} & \color{red}0 & \color{red}0 & \color{red}0 \\ \color{green}0 & \color{green}{S_2} & \color{green}0 & \color{green}0 \\ \color{blue}0 & \color{blue}0 & \color{blue}{S_3} & \color{blue}0 \\ \color{purple}0 & \color{purple}0 & \color{purple}0 & \color{purple}1 \end{bmatrix} \cdot \begin{pmatrix} x \\ y \\ z \\ 1 \end{pmatrix} = \begin{pmatrix} \color{red}{S_1} \cdot x \\ \color{green}{S_2} \cdot y \\ \color{blue}{S_3} \cdot z \\ 1 \end{pmatrix}$$
+
+##### Translation
+
+$$\begin{bmatrix}  \color{red}1 & \color{red}0 & \color{red}0 & \color{red}{T_x} \\ \color{green}0 & \color{green}1 & \color{green}0 & \color{green}{T_y} \\ \color{blue}0 & \color{blue}0 & \color{blue}1 & \color{blue}{T_z} \\ \color{purple}0 & \color{purple}0 & \color{purple}0 & \color{purple}1 \end{bmatrix} \cdot \begin{pmatrix} x \\ y \\ z \\ 1 \end{pmatrix} = \begin{pmatrix} x + \color{red}{T_x} \\ y + \color{green}{T_y} \\ z + \color{blue}{T_z} \\ 1 \end{pmatrix}$$
+
+**Homogeneous coordinates**
+The `w` component of a vector is also known as a homogeneous coordinate. To get the 3D vector from a homogeneous vector we divide the `x`, `y` and `z` coordinate by its `w` coordinate. We usually do not notice this since the `w` component is `1.0` most of the time. Using homogeneous coordinates has several advantages: it allows us to do matrix translations on 3D vectors (without a `w` component we can't translate vectors) and in the next chapter we'll use the `w` value to create 3D perspective.
+
+Also, whenever the homogeneous coordinate is equal to `0`, the vector is specifically known as a direction vector since a vector with a `w` coordinate of `0` cannot be translated.
+
+##### Rotation
+
+Most rotation functions require an angle in radians, but luckily degrees are easily converted to radians: 
+ `angle in degrees = angle in radians * (180 / PI) `
+ `angle in radians = angle in degrees * (PI / 180) `
+ Where `PI` equals (rounded) `3.14159265359`.
+
+![vectors_angle](/pic/vectors_angle.png)
+
+Rotation around the X-axis:  
+
+$$\begin{bmatrix} \color{red}1 & \color{red}0 & \color{red}0 & \color{red}0 \\ \color{green}0 & \color{green}{\cos \theta} & - \color{green}{\sin \theta} & \color{green}0 \\ \color{blue}0 & \color{blue}{\sin \theta} & \color{blue}{\cos \theta} & \color{blue}0 \\ \color{purple}0 & \color{purple}0 & \color{purple}0 & \color{purple}1 \end{bmatrix} \cdot \begin{pmatrix} x \\ y \\ z \\ 1 \end{pmatrix} = \begin{pmatrix} x \\ \color{green}{\cos \theta} \cdot y - \color{green}{\sin \theta} \cdot z \\ \color{blue}{\sin \theta} \cdot y + \color{blue}{\cos \theta} \cdot z \\ 1 \end{pmatrix}$$
+
+Rotation around the Y-axis:
+
+$$\begin{bmatrix} \color{red}{\cos \theta} & \color{red}0 & \color{red}{\sin \theta} & \color{red}0 \\ \color{green}0 & \color{green}1 & \color{green}0 & \color{green}0 \\ - \color{blue}{\sin \theta} & \color{blue}0 & \color{blue}{\cos \theta} & \color{blue}0 \\ \color{purple}0 & \color{purple}0 & \color{purple}0 & \color{purple}1 \end{bmatrix} \cdot \begin{pmatrix} x \\ y \\ z \\ 1 \end{pmatrix} = \begin{pmatrix} \color{red}{\cos \theta} \cdot x + \color{red}{\sin \theta} \cdot z \\ y \\ - \color{blue}{\sin \theta} \cdot x + \color{blue}{\cos \theta} \cdot z \\ 1 \end{pmatrix}$$
+
+Rotation around the Z-axis:
+
+$$\begin{bmatrix} \color{red}{\cos \theta} & - \color{red}{\sin \theta} & \color{red}0 & \color{red}0 \\ \color{green}{\sin \theta} & \color{green}{\cos \theta} & \color{green}0 & \color{green}0 \\ \color{blue}0 & \color{blue}0 & \color{blue}1 & \color{blue}0 \\ \color{purple}0 & \color{purple}0 & \color{purple}0 & \color{purple}1 \end{bmatrix} \cdot \begin{pmatrix} x \\ y \\ z \\ 1 \end{pmatrix} = \begin{pmatrix} \color{red}{\cos \theta} \cdot x - \color{red}{\sin \theta} \cdot y \\ \color{green}{\sin \theta} \cdot x + \color{green}{\cos \theta} \cdot y \\ z \\ 1 \end{pmatrix}$$    
+
+To rotate around an arbitrary 3D axis we can combine all 3 them by first rotating around the X-axis, then Y and then Z for example. However, this quickly introduces a problem called **Gimbal lock**. We won't discuss the details, but a better solution is to rotate around an arbitrary unit axis e.g. `(0.662,0.2,0.722)` (note that this is a unit vector) right away instead of combining the rotation matrices. Such a (verbose) matrix exists and is given below with $(R_x,R_y,R_z)$ as the arbitrary rotation axis:
+
+$$\begin{bmatrix} \cos \theta + \color{red}{R_x}^2(1 - \cos \theta) & \color{red}{R_x}\color{green}{R_y}(1 - \cos \theta) - \color{blue}{R_z} \sin \theta & \color{red}{R_x}\color{blue}{R_z}(1 - \cos \theta) + \color{green}{R_y} \sin \theta & 0 \\ \color{green}{R_y}\color{red}{R_x} (1 - \cos \theta) + \color{blue}{R_z} \sin \theta & \cos \theta + \color{green}{R_y}^2(1 - \cos \theta) & \color{green}{R_y}\color{blue}{R_z}(1 - \cos \theta) - \color{red}{R_x} \sin \theta & 0 \\ \color{blue}{R_z}\color{red}{R_x}(1 - \cos \theta) - \color{green}{R_y} \sin \theta & \color{blue}{R_z}\color{green}{R_y}(1 - \cos \theta) + \color{red}{R_x} \sin \theta & \cos \theta + \color{blue}{R_z}^2(1 - \cos \theta) & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
+
+Keep in mind that even this matrix does not completely prevent gimbal lock (although it gets a lot harder). To truly prevent Gimbal locks we have to represent rotations using quaternions, that are not only safer, but also more computationally friendly. However, a discussion of quaternions is out of this chapter's scope. 
+
+##### Combining matrices
+
+$$Trans . Scale = \begin{bmatrix} \color{red}1 & \color{red}0 & \color{red}0 & \color{red}1 \\ \color{green}0 & \color{green}1 & \color{green}0 & \color{green}2 \\ \color{blue}0 & \color{blue}0 & \color{blue}1 & \color{blue}3 \\ \color{purple}0 & \color{purple}0 & \color{purple}0 & \color{purple}1 \end{bmatrix} . \begin{bmatrix} \color{red}2 & \color{red}0 & \color{red}0 & \color{red}0 \\ \color{green}0 & \color{green}2 & \color{green}0 & \color{green}0 \\ \color{blue}0 & \color{blue}0 & \color{blue}2 & \color{blue}0 \\ \color{purple}0 & \color{purple}0 & \color{purple}0 & \color{purple}1 \end{bmatrix} = \begin{bmatrix} \color{red}2 & \color{red}0 & \color{red}0 & \color{red}1 \\ \color{green}0 & \color{green}2 & \color{green}0 & \color{green}2 \\ \color{blue}0 & \color{blue}0 & \color{blue}2 & \color{blue}3 \\ \color{purple}0 & \color{purple}0 & \color{purple}0 & \color{purple}1 \end{bmatrix}$$
+
+$$\begin{bmatrix} \color{red}2 & \color{red}0 & \color{red}0 & \color{red}1 \\ \color{green}0 & \color{green}2 & \color{green}0 & \color{green}2 \\ \color{blue}0 & \color{blue}0 & \color{blue}2 & \color{blue}3 \\ \color{purple}0 & \color{purple}0 & \color{purple}0 & \color{purple}1 \end{bmatrix} . \begin{bmatrix} x \\ y \\ z \\ 1 \end{bmatrix} = \begin{bmatrix} \color{red}2x + \color{red}1 \\ \color{green}2y + \color{green}2  \\ \color{blue}2z + \color{blue}3 \\ 1 \end{bmatrix}$$
+
+#### Practice
+
+OpenGL does not have any form of matrix or vector knowledge built in, so we have to define our own mathematics classes and functions. In this book we'd rather abstract from all the tiny mathematical details and simply use pre-made mathematics libraries. Luckily, there is an easy-to-use and tailored-for-OpenGL mathematics library called **GLM**.
+
+![glm](/pic/glm.png)
+
+GLM stands for Open**GL** **M**athematics and is a *header-only* library, which means that we only have to include the proper header files and we're done; no linking and compiling necessary. GLM can be downloaded from their [website](https://glm.g-truc.net/0.9.8/index.html). Copy the root directory of the header files into your *includes* folder and let's get rolling. 
+
+Most of GLM's functionality that we need can be found in 3 headers files that we'll include as follows:
+
+```c++
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
+```
+
+ Let's see if we can put our transformation knowledge to good use by translating a vector of `(1,0,0)` by `(1,1,0)` (note that we define it as a `glm::vec4` with its homogeneous coordinate set to `1.0`: 
+
+```c++
+glm::vec4 vec(1.0f, 0.0f, 0.0f, 1.0f);
+glm::mat4 trans = glm::mat4(1.0f);
+trans = glm::translate(trans, glm::vec3(1.0f, 1.0f, 0.0f));
+vec = trans * vec;
+std::cout << vec.x << vec.y << vec.z << std::endl;
+```
+
+ We first define a vector named `vec` using GLM's built-in vector class. Next we define a `mat4` and explicitly initialize it to the identity matrix by initializing the matrix's diagonals to `1.0`; if we do not initialize it to the identity matrix the matrix would be a null matrix (all elements `0`) and all subsequent matrix operations would end up a null matrix as well.  
+
+The next step is to create a transformation matrix by passing our identity matrix to the `glm::translate` function, together with a translation vector (the given matrix is then multiplied with a translation matrix and the resulting matrix is returned). 
+Then we multiply our vector by the transformation matrix and output the result. If we still remember how matrix translation works then the resulting vector should be `(1+1,0+1,0+0)` which is `(2,1,0)`. This snippet of code outputs `210` so the translation matrix did its job. 
+
+Let's do something more interesting and scale and rotate the container object from the previous chapter: 
+
+```c++
+glm::mat4 trans = glm::mat4(1.0f);
+trans = glm::rotate(trans, glm::radians(90.0f), glm::vec3(0.0, 0.0, 1.0));
+trans = glm::scale(trans, glm::vec3(0.5, 0.5, 0.5)); 
+```
+
+First we scale the container by `0.5` on each axis and then rotate the container `90` degrees around the Z-axis. GLM expects its angles in radians so we convert the degrees to radians using `glm::radians`. Note that the textured rectangle is on the XY plane so we want to rotate around the Z-axis. Keep in mind that the axis that we rotate around should be a unit vector, so be sure to normalize the vector first if you're not rotating around the X, Y, or Z axis. Because we pass the matrix to each of GLM's functions, GLM automatically multiples the matrices together, resulting in a transformation matrix that combines all the transformations.  
+
+The next big question is: how do we get the transformation matrix to the shaders? We shortly mentioned before that GLSL also has a `mat4` type. So we'll adapt the vertex shader to accept a `mat4` uniform variable and multiply the position vector by the matrix uniform: 
+
+```c++
+#version 330 core
+layout (location = 0) in vec3 aPos;
+layout (location = 1) in vec2 aTexCoord;
+
+out vec2 TexCoord;
+ 
+uniform mat4 transform;
+
+void main()
+{
+    gl_Position = transform * vec4(aPos, 1.0f);
+    TexCoord = vec2(aTexCoord.x, aTexCoord.y);
+} 
+```
+
+GLSL also has `mat2` and `mat3` types that allow for swizzling-like operations just like vectors. All the aforementioned math operations (like scalar-matrix multiplication, matrix-vector multiplication and matrix-matrix multiplication) are allowed on the matrix types. Wherever special matrix operations are used we'll be sure to explain what's happening.
+
+We added the uniform and multiplied the position vector with the transformation matrix before passing it to gl_Position. Our container should now be twice as small and rotated `90` degrees (tilted to the left). We still need to pass the transformation matrix to the shader though: 
+
+```c++
+unsigned int transformLoc = glGetUniformLocation(ourShader.ID, "transform");
+glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
+```
+
+We first query the location of the uniform variable and then send the matrix data to the shaders using `glUniform` with `Matrix4fv` as its postfix. The first argument should be familiar by now which is the uniform's location. The second argument tells OpenGL how many matrices we'd like to send, which is `1`. The third argument asks us if we want to transpose our matrix, that is to swap the columns and rows. OpenGL developers often use an internal matrix layout called column-major ordering which is the default matrix layout in GLM so there is no need to transpose the matrices; we can keep it at `GL_FALSE`. The last parameter is the actual matrix data, but GLM stores their matrices' data in a way that doesn't always match OpenGL's expectations so we first convert the data with GLM's built-in function value_ptr. 
+
+We created a transformation matrix, declared a uniform in the vertex shader and sent the matrix to the shaders where we transform our vertex coordinates. The result should look something like this:
+
+![transformations](/pic/transformations.png)
+
+Perfect! Our container is indeed tilted to the left and twice as small so the transformation was successful.  [My solution](code/05_trans/rotate/main.cpp)
+
+Let's get a little more funky and see if we can rotate the container over time, and for fun we'll also reposition the container at the bottom-right side of the window. To rotate the container over time we have to update the transformation matrix in the render loop because it needs to update each frame. We use GLFW's time function to get an angle over time:
+
+```c++
+glm::mat4 trans = glm::mat4(1.0f);
+trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
+trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+```
+
+Keep in mind that in the previous case we could declare the transformation matrix anywhere, but now we have to create it every iteration to continuously update the rotation. This means we have to re-create the transformation matrix in each iteration of the render loop. Usually when rendering scenes we have several transformation matrices that are re-created with new values each frame. 
+
+Here we first rotate the container around the origin `(0,0,0)` and once it's rotated, we translate its rotated version to the bottom-right corner of the screen. Remember that the actual transformation order should be read in reverse: even though in code we first translate and then later rotate, the actual transformations first apply a rotation and then a translation. Understanding all these combinations of transformations and how they apply to objects is difficult to understand. Try and experiment with transformations like these and you'll quickly get a grasp of it.
+
+If you did things right you should get the following result: A translated container that's rotated over time, all done by a single transformation matrix!
+
+[Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/5.1.transformations/transformations.cpp) 
+
+[My solution](code/05_trans/rotate_with_time/main.cpp)
+
+#### Further reading
+
+- [Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab): great video tutorial series by Grant Sanderson about the underlying mathematics of transformations and linear algebra.
+
+#### Exercises
+
+- Using the last transformation on the container, try switching the order around by first rotating and then translating. See what happens and try to reason why this happens: [Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/5.2.transformations_exercise1/transformations_exercise1.cpp). [My solution](code/05_trans/ex_1/main.cpp)
+- Try drawing a second container with another call to `glDrawElements` but place it at a different position using transformations **only**. Make sure this second container is placed at the top-left of the window and instead of rotating, scale it over time (using the `sin` function is useful here; note that using `sin` will cause the object to invert as soon as a negative scale is applied): [Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/5.2.transformations_exercise2/transformations_exercise2.cpp). [My solution](code/05_trans/ex_2/main.cpp)
+
+### Coordinate Systems
+
+OpenGL expects all the vertices, that we want to become visible, to be in normalized device coordinates after each vertex shader run. That is, the `x`, `y` and `z` coordinates of each vertex should be between `-1.0` and `1.0`; coordinates outside this range will not be visible. What we usually do, is specify the coordinates in a range (or space) we determine ourselves and in the vertex shader transform these coordinates to normalized device coordinates (NDC). These NDC are then given to the rasterizer to transform them to 2D coordinates/pixels on your screen.
+
+Transforming coordinates to NDC is usually accomplished in a step-by-step fashion where we transform an object's vertices to several coordinate systems before finally transforming them to NDC. The advantage of transforming them to several *intermediate* coordinate systems is that some operations/calculations are easier in certain coordinate systems as will soon become apparent. There are a total of 5 different coordinate systems that are of importance to us:
+
+- Local space (or Object space)
+- World space
+- View space (or Eye space)
+- Clip space
+- Screen space
+
+Those are all a different state at which our vertices will be transformed in before finally ending up as fragments. 
+
+You're probably quite confused by now by what a space or coordinate system actually is so we'll explain them in a more high-level fashion first by showing the total picture and what each specific space represents.
+
+#### The global picture
+
+To transform the coordinates from one space to the next coordinate space we'll use several transformation matrices of which the most important are the **model**, **view** and **projection** matrix. Our vertex coordinates first start in local space as local coordinates and are then further processed to **world coordinates, view coordinates, clip coordinates** and eventually end up as screen coordinates. The following image displays the process and shows what each transformation does:
+
+![coordinate_systems](/pic/coordinate_systems.png)
+
+1. Local coordinates are the coordinates of your object relative to its local origin; they're the coordinates your object begins in. 
+2. The next step is to transform the local coordinates to world-space coordinates which are coordinates in respect of a larger world. These coordinates are relative to some global origin of the world, together with many other objects also placed relative to this world's origin.
+3. Next we transform the world coordinates to view-space coordinates in such a way that each coordinate is as seen from the camera or viewer's point of view. 
+4. After the coordinates are in view space we want to project them to clip coordinates. Clip coordinates are processed to the `-1.0` and `1.0` range and determine which vertices will end up on the screen. Projection to clip-space coordinates can add perspective if using perspective projection. 
+5. And lastly we transform the clip coordinates to screen coordinates in a process we call viewport transform that transforms the coordinates from `-1.0` and `1.0` to the coordinate range defined by glViewport. The resulting coordinates are then sent to the rasterizer to turn them into fragments. 
+
+#### Local space
+
+Local space is the coordinate space that is local to your object, i.e. where your object begins in. Imagine that you've created your cube in a modeling software package (like Blender). The origin of your cube is probably at `(0,0,0)` even though your cube may end up at a different location in your final application. Probably all the models you've created all have `(0,0,0)` as their initial position. All the vertices of your model are therefore in *local* space: they are all local to your object. 
+
+The vertices of the container we've been using were specified as coordinates between `-0.5` and `0.5` with `0.0` as its origin. These are local coordinates.
+
+#### World space
+
+If we would import all our objects directly in the application they would probably all be somewhere positioned inside each other at the world's origin of `(0,0,0)` which is not what we want. We want to define a position for each object to position them inside a larger world. The coordinates in world space are exactly what they sound like: the coordinates of all your vertices relative to a (game) world. This is the coordinate space where you want your objects transformed to in such a way that they're all scattered around the place (preferably in a realistic fashion). The coordinates of your object are transformed from local to world space; this is accomplished with the **model** matrix.
+
+The model matrix is a transformation matrix that translates, scales and/or rotates your object to place it in the world at a location/orientation they belong to. Think of it as transforming a house by scaling it down (it was a bit too large in local space), translating it to a suburbia town and rotating it a bit to the left on the y-axis so that it neatly fits with the neighboring houses. You could think of the matrix in the previous chapter to position the container all over the scene as a sort of model matrix as well; we transformed the local coordinates of the container to some different place in the scene/world.
+
+#### View space
+
+The view space is what people usually refer to as the **camera** of OpenGL (it is sometimes also known as **camera space** or **eye space**). The view space is the result of transforming your world-space coordinates to coordinates that are in front of the user's view. The view space is thus the space as seen from the camera's point of view. This is usually accomplished with a combination of translations and rotations to translate/rotate the scene so that certain items are transformed to the front of the camera. These combined transformations are generally stored inside a **view matrix** that transforms world coordinates to view space. In the next chapter we'll extensively discuss how to create such a view matrix to simulate a camera.
+
+#### Clip space
+
+At the end of each vertex shader run, OpenGL expects the coordinates to be within a specific range and any coordinate that falls outside this range is **clipped**. Coordinates that are clipped are discarded, so the remaining coordinates will end up as fragments visible on your screen. This is also where **clip space** gets its name from.
+
+Because specifying all the visible coordinates to be within the range `-1.0` and `1.0` isn't really intuitive, we specify our own coordinate set to work in and convert those back to NDC as OpenGL expects them.
+
+To transform vertex coordinates from view to clip-space we define a so called projection matrix that specifies a range of coordinates e.g. `-1000` and `1000` in each dimension. The **projection matrix** then transforms coordinates within this specified range to normalized device coordinates (`-1.0`, `1.0`). All coordinates outside this range will not be mapped between `-1.0` and `1.0` and therefore be clipped. With this range we specified in the projection matrix, a coordinate of (`1250`, `500`, `750`) would not be visible, since the `x` coordinate is out of range and thus gets converted to a coordinate higher than `1.0` in NDC and is therefore clipped.
+
+> Note that if only a part of a primitive e.g. a triangle is outside the **clipping volume** OpenGL will reconstruct the triangle as one or more triangles to fit inside the clipping range.
+
+This *viewing box* a projection matrix creates is called a **frustum** and each coordinate that ends up inside this frustum will end up on the user's screen. The total process to convert coordinates within a specified range to NDC that can easily be mapped to 2D view-space coordinates is called **projection** since the projection matrix **projects** 3D coordinates to the easy-to-map-to-2D normalized device coordinates. 
+
+Once all the vertices are transformed to clip space a final operation called **perspective division** is performed where we divide the `x`, `y` and `z` components of the position vectors by the vector's homogeneous `w` component; perspective division is what transforms the 4D clip space coordinates to 3D normalized device coordinates. This step is performed automatically at the end of the vertex shader step. 
+
+It is after this stage where the resulting coordinates are mapped to screen coordinates (using the settings of glViewport) and turned into fragments.
+
+The projection matrix to transform view coordinates to clip coordinates usually takes two different forms, where each form defines its own unique frustum. We can either create an **orthographic** projection matrix or a **perspective** projection matrix.
+
+##### Orthographic projection
+
+An orthographic projection matrix defines a cube-like frustum box that defines the clipping space where each vertex outside this box is clipped. When creating an orthographic projection matrix we specify the width, height and length of the visible frustum. All the coordinates inside this frustum will end up within the NDC range after transformed by its matrix and thus won't be clipped. The frustum looks a bit like a container:
+
+![orthographic_frustum](/pic/orthographic_frustum.png)
+
+The frustum defines the visible coordinates and is specified by a width, a height and a near and far plane. Any coordinate in front of the near plane is clipped and the same applies to coordinates behind the far plane. The orthographic frustum **directly** maps all coordinates inside the frustum to normalized device coordinates without any special side effects since it won't touch the `w` component of the transformed vector; if the `w` component remains equal to `1.0` perspective division won't change the coordinates.
+
+To create an orthographic projection matrix we make use of GLM's built-in function `glm::ortho`:
+
+```c++
+glm::ortho(0.0f, 800.0f, 0.0f, 600.0f, 0.1f, 100.0f);
+```
+
+The first two parameters specify the left and right coordinate of the frustum and the third and fourth parameter specify the bottom and top part of the frustum. With those 4 points we've defined the size of the near and far planes and the 5th and 6th parameter then define the distances between the near and far plane. This specific projection matrix transforms all coordinates between these `x`, `y` and `z` range values to normalized device coordinates. 
+
+An orthographic projection matrix directly maps coordinates to the 2D plane that is your screen, but in reality a direct projection produces unrealistic results since the projection doesn't take **perspective** into account. That is something the **perspective projection** matrix fixes for us.
+
+##### Perspective projection
+
+If you ever were to enjoy the graphics the *real life* has to offer you'll notice that objects that are farther away appear much smaller. This weird effect is something we call perspective. Perspective is especially noticeable when looking down the end of an infinite motorway or railway as seen in the following image:
+
+![perspective](/pic/perspective.png)
+
+As you can see, due to perspective the lines seem to coincide at a far enough distance. This is exactly the effect perspective projection tries to mimic and it does so using a perspective projection matrix. The projection matrix maps a given frustum range to clip space, but also manipulates the `w` value of each vertex coordinate in such a way that the further away a vertex coordinate is from the viewer, the higher this `w` component becomes. Once the coordinates are transformed to clip space they are in the range `-w` to `w` (anything outside this range is clipped). OpenGL requires that the visible coordinates fall between the range `-1.0` and `1.0` as the final vertex shader output, thus once the coordinates are in clip space, perspective division is applied to the clip space coordinates:
+
+$$out = \begin{pmatrix} x /w \\ y / w \\ z / w \end{pmatrix}$$
+
+Each component of the vertex coordinate is divided by its `w` component giving smaller vertex coordinates the further away a vertex is from the viewer. This is another reason why the `w` component is important, since it helps us with perspective projection. The resulting coordinates are then in normalized device space. If you're interested to figure out how the orthographic and perspective projection matrices are actually calculated (and aren't too scared of the mathematics) I can recommend [this excellent article](http://www.songho.ca/opengl/gl_projectionmatrix.html) by Songho.
+
+A perspective projection matrix can be created in GLM as follows:
+
+```c++
+glm::mat4 proj = glm::perspective(glm::radians(45.0f), (float)width/(float)height, 0.1f, 100.0f);
+```
+
+What `glm::perspective` does is again create a large *frustum* that defines the visible space, anything outside the frustum will not end up in the clip space volume and will thus become clipped. A perspective frustum can be visualized as a non-uniformly shaped box from where each coordinate inside this box will be mapped to a point in clip space. An image of a perspective frustum is seen below:
+
+![perspective_frustum](/pic/perspective_frustum.png)
+
+Its first parameter defines the fov value, that stands for field of view and sets how large the viewspace is. For a realistic view it is usually set to 45 degrees, but for more doom-style results you could set it to a higher value. The second parameter sets the aspect ratio which is calculated by dividing the viewport's width by its height. The third and fourth parameter set the *near* and *far* plane of the frustum. We usually set the near distance to `0.1` and the far distance to `100.0`. All the vertices between the near and far plane and inside the frustum will be rendered.
+
+> Whenever the *near* value of your perspective matrix is set too high (like `10.0`), OpenGL will clip all coordinates close to the camera (between `0.0` and `10.0`), which can give a visual result you maybe have seen before in videogames where you could see through certain objects when moving uncomfortably close to them. 
+
+When using orthographic projection, each of the vertex coordinates are directly mapped to clip space without any fancy perspective division (it still does perspective division, but the `w` component is not manipulated (it stays `1`) and thus has no effect). Because the orthographic projection doesn't use perspective projection, objects farther away do not seem smaller, which produces a weird visual output. For this reason the orthographic projection is mainly used for 2D renderings and for some architectural or engineering applications where we'd rather not have vertices distorted by perspective. Applications like *Blender* that are used for 3D modeling sometimes use orthographic projection for modeling, because it more accurately depicts each object's dimensions. Below you'll see a comparison of both projection methods in Blender: 
+
+![perspective_orthographic](/pic/perspective_orthographic.png) 
+
+You can see that with perspective projection, the vertices farther away appear much smaller, while in orthographic projection each vertex has the same distance to the user. 
+
+#### Putting it all together
+
+We create a transformation matrix for each of the aforementioned steps: model, view and projection matrix. A vertex coordinate is then transformed to clip coordinates as follows:  	
+
+$$V_{clip} = M_{projection} \cdot M_{view} \cdot M_{model} \cdot V_{local}$$
+
+Note that the order of matrix multiplication is reversed (remember that we need to read matrix multiplication from right to left). The resulting vertex should then be assigned to `gl_Position` in the vertex shader and OpenGL will then automatically perform perspective division and clipping.
+
+> **And then?**
+> The output of the vertex shader requires the coordinates to be in clip-space which is what we just did with the transformation matrices. OpenGL then performs *perspective division* on the *clip-space coordinates* to transform them to *normalized-device coordinates*. OpenGL then uses the parameters from `glViewPort` to map the normalized-device coordinates to *screen coordinates* where each coordinate corresponds to a point on your screen (in our case a 800x600 screen). This process is called the *viewport transform*. 
+
+#### Going 3D
+
+Now that we know how to transform 3D coordinates to 2D coordinates we can start rendering real 3D objects instead of the lame 2D plane we've been showing so far.
+
+To start drawing in 3D we'll first create a model matrix. The model matrix consists of translations, scaling and/or rotations we'd like to apply to *transform* all object's vertices to the global world space. Let's transform our plane a bit by rotating it on the x-axis so it looks like it's laying on the floor. The model matrix then looks like this:
+
+```c++
+glm::mat4 model = glm::mat4(1.0f);
+model = glm::rotate(model, glm::radians(-55.0f), glm::vec3(1.0f, 0.0f, 0.0f)); 
+```
+
+By multiplying the vertex coordinates with this model matrix we're transforming the vertex coordinates to world coordinates. Our plane that is slightly on the floor thus represents the plane in the global world.  
+
+Next we need to create a view matrix. We want to move slightly backwards in the scene so the object becomes visible (when in world space we're located at the origin `(0,0,0)`). To move around the scene, think about the following: 
+
+- To move a camera backwards, is the same as moving the entire scene forward.
+
+That is exactly what a view matrix does, we move the entire scene around inversed to where we want the camera to move.
+Because we want to move backwards and since OpenGL is a right-handed system we have to move in the positive z-axis. We do this by translating the scene towards the negative z-axis. This gives the impression that we are moving backwards. 
+
+> **Right-handed system**
+>
+> By convention, OpenGL is a right-handed system. What this basically says is that the positive x-axis is to your right, the positive y-axis is up and the positive z-axis is backwards. Think of your screen being the center of the 3 axes and the positive z-axis going through your screen towards you. The axes are drawn as follows:
+>
+> ![coordinate_systems_right_handed](/pic/coordinate_systems_right_handed.png)
+>
+> To understand why it's called right-handed do the following:  
+>
+> - Stretch your right-arm along the positive y-axis with your hand up top.
+> - Let your thumb point to the right.
+> - Let your pointing finger point up.
+> - Now bend your middle finger downwards 90 degrees.
+>
+> If you did things right, your thumb should point towards the positive x-axis, the pointing finger towards the positive y-axis and your middle finger towards the positive z-axis. If you were to do this with your left-arm you would see the z-axis is reversed. This is known as a left-handed system and is commonly used by DirectX. Note that in normalized device coordinates OpenGL actually uses a left-handed system (the projection matrix switches the handedness). 
+
+We'll discuss how to move around the scene in more detail in the next chapter. For now the view matrix looks like this:
+
+```c++
+glm::mat4 view = glm::mat4(1.0f);
+// note that we're translating the scene in the reverse direction of where we want to move
+view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f)); 
+```
+
+The last thing we need to define is the projection matrix. We want to use perspective projection for our scene so we'll declare the projection matrix like this:
+
+```c++
+glm::mat4 projection;
+projection = glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
+```
+
+Now that we created the transformation matrices we should pass them to our shaders. First let's declare the transformation matrices as uniforms in the vertex shader and multiply them with the vertex coordinates:
+
+```c++
+#version 330 core
+layout (location = 0) in vec3 aPos;
+...
+uniform mat4 model;
+uniform mat4 view;
+uniform mat4 projection;
+
+void main()
+{
+    // note that we read the multiplication from right to left
+    gl_Position = projection * view * model * vec4(aPos, 1.0);
+    ...
+}
+```
+
+We should also send the matrices to the shader (this is usually done each frame since transformation matrices tend to change a lot):
+
+```c++
+int modelLoc = glGetUniformLocation(ourShader.ID, "model");
+glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+... // same for View Matrix and Projection Matrix
+```
+
+Now that our vertex coordinates are transformed via the model, view and projection matrix the final object should be: 
+
+- Tilted backwards to the floor. 
+- A bit farther away from us.
+- Be displayed with perspective (it should get smaller, the further its vertices are).
+
+Let's check if the result actually does fulfill these requirements:
+
+![coordinate_systems_result](/pic/coordinate_systems_result.png)
+
+[Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/6.1.coordinate_systems/coordinate_systems.cpp)
+
+[My solution](code/06_coor/go_3d/main.cpp)
+
+#### More 3D
+
+So far we've been working with a 2D plane, even in 3D space, so let's take the adventurous route and extend our 2D plane to a 3D cube. To render a cube we need a total of 36 vertices (6 faces * 2 triangles * 3 vertices each). 36 vertices are a lot to sum up so you can retrieve them from [here](https://learnopengl.com/code_viewer.php?code=getting-started/cube_vertices). 
+
+For fun, we'll let the cube rotate over time: 
+
+```c++
+model = glm::rotate(model, (float)glfwGetTime() * glm::radians(50.0f), glm::vec3(0.5f, 1.0f, 0.0f));  
+```
+
+And then we'll draw the cube using glDrawArrays (as we didn't specify indices), but this time with a count of 36 vertices.
+
+```c++
+glDrawArrays(GL_TRIANGLES, 0, 36);
+```
+
+You should get something similar to the following:
+
+https://learnopengl.com/video/getting-started/coordinate_system_no_depth.mp4
+
+Some sides of the cubes are being drawn over other sides of the cube. This happens because when OpenGL draws your cube triangle-by-triangle, fragment by fragment, it will overwrite any pixel color that may have already been drawn there before. Since OpenGL gives no guarantee on the order of triangles rendered (within the same draw call), some triangles are drawn on top of each other even though one should clearly be in front of the other.
+
+Luckily, OpenGL stores depth information in a buffer called the z-buffer that allows OpenGL to decide when to draw over a pixel and when not to. Using the z-buffer we can configure OpenGL to do depth-testing.
+
+##### Z-buffer
+
+OpenGL stores all its depth information in a z-buffer, also known as a depth buffer. GLFW automatically creates such a buffer for you (just like it has a color-buffer that stores the colors of the output image). The depth is stored within each fragment (as the fragment's `z` value) and whenever the fragment wants to output its color, OpenGL compares its depth values with the z-buffer. If the current fragment is behind the other fragment it is discarded, otherwise overwritten. This process is called depth testing and is done automatically by OpenGL.
+
+However, if we want to make sure OpenGL actually performs the depth testing we first need to tell OpenGL we want to enable depth testing; it is disabled by default. We can enable depth testing using glEnable. The glEnable and glDisable functions allow us to enable/disable certain functionality in OpenGL. That functionality is then enabled/disabled until another call is made to disable/enable it. Right now we want to enable depth testing by enabling GL_DEPTH_TEST:
+
+```c++
+glEnable(GL_DEPTH_TEST); 
+```
+
+Since we're using a depth buffer we also want to clear the depth buffer before each render iteration (otherwise the depth information of the previous frame stays in the buffer). Just like clearing the color buffer, we can clear the depth buffer by specifying the DEPTH_BUFFER_BIT bit in the glClear function:
+
+```c++
+glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+```
+
+Let's re-run our program and see if OpenGL now performs depth testing:
+
+https://learnopengl.com/video/getting-started/coordinate_system_depth.mp4
+
+[Official Solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/6.2.coordinate_systems_depth/coordinate_systems_depth.cpp)
+
+[My solution](code/06_coor/more_3d/main.cpp)
+
+##### More cubes!
+
+Say we wanted to display 10 of our cubes on screen. Each cube will look the same but will only differ in where it's located in the world with each a different rotation. The graphical layout of the cube is already defined so we don't have to change our buffers or attribute arrays when rendering more objects. The only thing we have to change for each object is its model matrix where we transform the cubes into the world.
+
+First, let's define a translation vector for each cube that specifies its position in world space. We'll define 10 cube positions in a `glm::vec3` array:
+
+```c++
+glm::vec3 cubePositions[] = {
+    glm::vec3( 0.0f,  0.0f,  0.0f), 
+    glm::vec3( 2.0f,  5.0f, -15.0f), 
+    glm::vec3(-1.5f, -2.2f, -2.5f),  
+    glm::vec3(-3.8f, -2.0f, -12.3f),  
+    glm::vec3( 2.4f, -0.4f, -3.5f),  
+    glm::vec3(-1.7f,  3.0f, -7.5f),  
+    glm::vec3( 1.3f, -2.0f, -2.5f),  
+    glm::vec3( 1.5f,  2.0f, -2.5f), 
+    glm::vec3( 1.5f,  0.2f, -1.5f), 
+    glm::vec3(-1.3f,  1.0f, -1.5f)  
+};
+```
+
+Now, within the render loop we want to call glDrawArrays 10 times, but this time send a different model matrix to the vertex shader each time before we send out the draw call. We will create a small loop within the render loop that renders our object 10 times with a different model matrix each time. Note that we also add a small unique rotation to each container.
+
+```c++
+glBindVertexArray(VAO);
+for(unsigned int i = 0; i < 10; i++)
+{
+    glm::mat4 model = glm::mat4(1.0f);
+    model = glm::translate(model, cubePositions[i]);
+    float angle = 20.0f * i; 
+    model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
+    ourShader.setMat4("model", model);
+
+    glDrawArrays(GL_TRIANGLES, 0, 36);
+}
+```
+
+This snippet of code will update the model matrix each time a new cube is drawn and do this 10 times in total. Right now we should be looking into a world filled with 10 oddly rotated cubes:
+
+![coordinate_systems_multiple_objects](/pic/coordinate_systems_multiple_objects.png)
+
+[Official Solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/6.3.coordinate_systems_multiple/coordinate_systems_multiple.cpp)
+
+[My solution](code/06_coor/more_cubes/main.cpp)
+
+#### Exercises
+
+- Try experimenting with the `FoV` and `aspect-ratio` parameters of GLM's `projection` function. See if you can figure out how those affect the perspective frustum.
+- Play with the view matrix by translating in several directions and see how the scene changes. Think of the view matrix as a camera object.
+- Try to make every 3rd container (including the 1st) rotate over time, while leaving the other containers static using just the model matrix: [Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/6.4.coordinate_systems_exercise3/coordinate_systems_exercise3.cpp). [My solution](code/06_coor/ex_3/main.cpp)
+
+### Camera
+
+OpenGL by itself is not familiar with the concept of a *camera*, but we can try to simulate one by moving all objects in the scene in the reverse direction, giving the illusion that **we** are moving.
+
+In this chapter we'll discuss how we can set up a camera in OpenGL. We will discuss a fly style camera that allows you to freely move around in a 3D scene. We'll also discuss keyboard and mouse input and finish with a custom camera class.
+
+#### Camera/View space
+
+When we're talking about camera/view space we're talking about all the vertex coordinates as seen from the camera's perspective as the origin of the scene: the view matrix transforms all the world coordinates into view coordinates that are relative to the camera's position and direction. To define a camera we need its position in world space, the direction it's looking at, a vector pointing to the right and a vector pointing upwards from the camera. A careful reader may notice that we're actually going to create a coordinate system with 3 perpendicular unit axes with the camera's position as the origin.
+
+![camera_axes](/pic/camera_axes.png)
+
+##### 1. Camera position
+
+Getting the camera position is easy. The camera position is a vector in world space that points to the camera's position. We set the camera at the same position we've set the camera in the previous chapter:
+
+```c++
+glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f); 
+```
+
+> Don't forget that the positive z-axis is going through your screen towards you so if we want the camera to move backwards, we move along the positive z-axis.
+
+##### 2. Camera direction
+
+The next vector required is the camera's direction e.g. at what  direction it is pointing at. For now we let the camera point to the  origin of our scene: `(0,0,0)`. Remember that if we subtract  two vectors from each other we get a vector that's the difference of  these two vectors? Subtracting the camera position vector from the  scene's origin vector thus results in the direction vector we want. For  the view matrix's coordinate system we want its z-axis to be positive  and because by convention (in OpenGL) the camera points towards the  negative z-axis we want to negate the direction vector. If we switch the subtraction order around we now get a vector pointing towards the  camera's positive z-axis:
+
+```c++
+glm::vec3 cameraTarget = glm::vec3(0.0f, 0.0f, 0.0f);
+glm::vec3 cameraDirection = glm::normalize(cameraPos - cameraTarget);
+```
+
+> The name *direction* vector is not the best chosen name, since it is actually pointing in the reverse direction of what it is targeting.
+
+##### 3. Right axis
+
+The next vector that we need is a *right* vector that represents the positive x-axis of the camera space. To get the *right* vector we use a little trick by first specifying an *up* vector that points upwards (in world space). Then we do a cross product on the up vector and the direction vector from step 2. Since the result of a cross product is a vector perpendicular to both vectors, we will get a vector that points in the positive x-axis's direction (if we would switch the cross product order we'd get a vector that points in the negative x-axis): 
+
+```c++
+glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f); 
+glm::vec3 cameraRight = glm::normalize(glm::cross(up, cameraDirection));
+```
+
+##### 4. Up axis
+
+Now that we have both the x-axis vector and the z-axis vector, retrieving the vector that points to the camera's positive y-axis is relatively easy: we take the cross product of the right and direction vector:
+
+```c++
+glm::vec3 cameraUp = glm::cross(cameraDirection, cameraRight);
+```
+
+With the help of the cross product and a few tricks we were able to create all the vectors that form the view/camera space. For the more mathematically inclined readers, this process is known as the [Gram-Schmidt](http://en.wikipedia.org/wiki/Gram–Schmidt_process) process in linear algebra. Using these camera vectors we can now create a LookAt matrix that proves very useful for creating a camera.
+
+#### Look At
+
+A great thing about matrices is that if you define a coordinate space using 3 perpendicular (or non-linear) axes you can create a matrix with those 3 axes plus a translation vector and you can transform any vector to that coordinate space by multiplying it with this matrix. This is exactly what the *LookAt* matrix does and now that we have 3 perpendicular axes and a position vector to define the camera space we can create our own LookAt matrix:  
+
+$$LookAt = \begin{bmatrix} \color{red}{R_x} & \color{red}{R_y} & \color{red}{R_z} & 0 \\ \color{green}{U_x} & \color{green}{U_y} & \color{green}{U_z} & 0 \\ \color{blue}{D_x} & \color{blue}{D_y} & \color{blue}{D_z} & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix} * \begin{bmatrix} 1 & 0 & 0 & -\color{purple}{P_x} \\ 0 & 1 & 0 & -\color{purple}{P_y} \\ 0 & 0 & 1 & -\color{purple}{P_z} \\ 0 & 0 & 0 & 1 \end{bmatrix}$$
+
+Where *R* is the right vector, *U* is the up vector, *D* is the direction vector and *P* is the camera's position vector. Note that the rotation (left matrix) and translation (right matrix) parts are inverted (transposed and negated respectively) since we want to rotate and translate the world in the opposite direction of where we want the camera to move. Using this LookAt matrix as our view matrix effectively transforms all the world coordinates to the view space we just defined. The LookAt matrix then does exactly what it says: it creates a view matrix that *looks* at a given target.
+
+Luckily for us, GLM already does all this work for us. We only have to specify a camera position, a target position and a vector that represents the up vector in world space (the up vector we used for calculating the right vector). GLM then creates the LookAt matrix that we can use as our view matrix:
+
+```c++
+glm::mat4 view;
+view = glm::lookAt(glm::vec3(0.0f, 0.0f, 3.0f), 
+  		   glm::vec3(0.0f, 0.0f, 0.0f), 
+  		   glm::vec3(0.0f, 1.0f, 0.0f));
+```
+
+The `glm::LookAt` function requires a position, target and up vector respectively. This example creates a view matrix that is the same as the one we created in the previous chapter.
+
+Before delving into user input, let's get a little funky first by rotating the camera around our scene. We keep the target of the scene at `(0,0,0)`. We use a little bit of trigonometry to create an `x` and `z` coordinate each frame that represents a point on a circle and we'll use these for our camera position. By re-calculating the `x` and `y` coordinate over time we're traversing all the points in a circle and thus the camera rotates around the scene. We enlarge this circle by a pre-defined radius and create a new view matrix each frame using GLFW's glfwGetTime function:
+
+```c++
+const float radius = 10.0f;
+float camX = sin(glfwGetTime()) * radius;
+float camZ = cos(glfwGetTime()) * radius;
+glm::mat4 view;
+view = glm::lookAt(glm::vec3(camX, 0.0, camZ), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 1.0, 0.0)); 
+```
+
+ If you run this code you should get something like this:
+
+https://learnopengl.com/video/getting-started/camera_circle.mp4
+
+[Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/7.1.camera_circle/camera_circle.cpp)
+
+[My solution](code/07_camera/look_at/main.cpp)
+
+#### Walk around
+
+Swinging the camera around a scene is fun, but it's more fun to do all the movement ourselves! First we need to set up a camera system, so it is useful to define some camera variables at the top of our program:
+
+```c++
+glm::vec3 cameraPos   = glm::vec3(0.0f, 0.0f,  3.0f);
+glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
+glm::vec3 cameraUp    = glm::vec3(0.0f, 1.0f,  0.0f);
+```
+
+The `LookAt` function now becomes:
+
+```c++
+view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
+```
+
+First we set the camera position to the previously defined cameraPos. The direction is the current position + the direction vector we just defined. This ensures that however we move, the camera keeps looking at the target direction. Let's play a bit with these variables by updating the cameraPos vector when we press some keys.
+
+We already defined a processInput function to manage GLFW's keyboard input so let's add a few extra key commands:
+
+```c++
+void processInput(GLFWwindow *window)
+{
+    ...
+    const float cameraSpeed = 0.05f; // adjust accordingly
+    if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+        cameraPos += cameraSpeed * cameraFront;
+    if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+        cameraPos -= cameraSpeed * cameraFront;
+    if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+        cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+    if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+        cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+}
+```
+
+Whenever we press one of the `WASD` keys, the camera's position is updated accordingly. If we want to move forward or backwards we add or subtract the direction vector from the position vector scaled by some speed value. If we want to move sideways we do a cross product to create a *right* vector and we move along the right vector accordingly. This creates the familiar strafe effect when using the camera. 
+
+> Note that we normalize the resulting *right* vector. If we wouldn't normalize this vector, the resulting cross product may return differently sized vectors based on the cameraFront variable. If we would not normalize the vector we would move slow or fast based on the camera's orientation instead of at a consistent movement speed.
+
+By now, you should already be able to move the camera somewhat, albeit at a speed that's system-specific so you may need to adjust **cameraSpeed**.
+
+##### Movement speed
+
+Currently we used a constant value for movement speed when walking around. In theory this seems fine, but in practice people's machines have different processing powers and the result of that is that some people are able to render much more frames than others each second. Whenever a user renders more frames than another user he also calls processInput more often. The result is that some people move really fast and some really slow depending on their setup. When shipping your application you want to make sure it runs the same on all kinds of hardware.
+
+Graphics applications and games usually keep track of a deltatime variable that stores the time it took to render the last frame. We then multiply all velocities with this deltaTime value. The result is that when we have a large deltaTime in a frame, meaning that the last frame took longer than average, the velocity for that frame will also be a bit higher to balance it all out. When using this approach it does not matter if you have a very fast or slow pc, the velocity of the camera will be balanced out accordingly so each user will have the same experience.
+
+To calculate the deltaTime value we keep track of 2 global variables:
+
+```c++
+float deltaTime = 0.0f;	// Time between current frame and last frame
+float lastFrame = 0.0f; // Time of last frame
+```
+
+ Within each frame we then calculate the new deltaTime value for later use:
+
+```c++
+float currentFrame = glfwGetTime();
+deltaTime = currentFrame - lastFrame;
+lastFrame = currentFrame;  
+```
+
+Now that we have deltaTime we can take it into account when calculating the velocities:
+
+```c++
+void processInput(GLFWwindow *window)
+{
+    float cameraSpeed = 2.5f * deltaTime;
+    [...]
+}
+```
+
+Since we're using deltaTime the camera will now move at a constant speed of `2.5` units per second. Together with the previous section we should now have a much smoother and more consistent camera system for moving around the scene:
+
+https://learnopengl.com/video/getting-started/camera_smooth.mp4
+
+[Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/7.2.camera_keyboard_dt/camera_keyboard_dt.cpp)
+
+[My solution](code/07_camera/walk_around/main.cpp)
+
+We'll see the deltaTime value frequently return with anything movement related.
+
+#### Look around
+
+Only using the keyboard keys to move around isn't that interesting. Especially since we can't turn around making the movement rather restricted. That's where the mouse comes in!
+
+To look around the scene we have to change the `cameraFront` vector based on the input of the mouse. However, changing the direction vector based on mouse rotations is a little complicated and requires some trigonometry. If you do not understand the trigonometry, don't worry, you can just skip to the code sections and paste them in your code; you can always come back later if you want to know more.
+
+##### Euler angles
+
+Euler angles are 3 values that can represent any rotation in 3D, defined by Leonhard Euler somewhere in the 1700s. There are 3 Euler angles: *pitch*, *yaw* and *roll*. The following image gives them a visual meaning:
+
+![camera_pitch_yaw_roll](/pic/camera_pitch_yaw_roll.png)
+
+The pitch is the angle that depicts how much we're looking up or down as seen in the first image. The second image shows the yaw value which represents the magnitude we're looking to the left or to the right. The roll represents how much we *roll* as mostly used in space-flight cameras. Each of the Euler angles are represented by a single value and with the combination of all 3 of them we can calculate any rotation vector in 3D.
+
+For our camera system we only care about the yaw and pitch values so we won't discuss the roll value here. Given a pitch and a yaw value we can convert them into a 3D vector that represents a new direction vector. The process of converting yaw and pitch values to a direction vector requires a bit of trigonometry. and we start with a basic case:
+
+Let's start with a bit of a refresher and check the general right triangle case (with one side at a 90 degree angle): 
+
+![camera_triangle](/pic/camera_triangle.png)
+
+If we define the hypotenuse to be of length `1` we know from trigonometry (soh cah toa) that the adjacant side's length is $\mathrm{cos} x/h=\mathrm{cos}x/1=\mathrm{cos}x$ and that the opposing side's length is $\mathrm{sin} x/h=\mathrm{sin}x/1=\mathrm{sin}x$. This gives us some general formulas for retrieving the length in both the `x` and `y` sides on right triangles, depending on the given angle. Let's use this to calculate the components of the direction vector.
+
+Let's imagine this same triangle, but now looking at it from a top perspective with the adjacent and opposite sides being parallel to the scene's x and z axis (as if looking down the y-axis). 
+
+![camera_yaw](/pic/camera_yaw.png)
+
+If we visualize the yaw angle to be the counter-clockwise angle starting from the `x` side we can see that the length of the `x` side relates to `cos(yaw)`. And similarly how the length of the `z` side relates to `sin(yaw)`. 
+
+If we take this knowledge and a given `yaw` value we can use it to create a camera direction vector:
+
+```c++
+glm::vec3 direction;
+direction.x = cos(glm::radians(yaw)); // Note that we convert the angle to radians first
+direction.z = sin(glm::radians(yaw));
+```
+
+This solves how we can get a 3D direction vector from a yaw value, but pitch needs to be included as well. Let's now look at the `y` axis side as if we're sitting on the `xz` plane: 
+
+![camera_pitch](/pic/camera_pitch.png)
+
+Similarly, from this triangle we can see that the direction's y component equals `sin(pitch)` so let's fill that in:
+
+```c++
+direction.y = sin(glm::radians(pitch)); 
+```
+
+However, from the pitch triangle we can also see the `xz` sides are influenced by `cos(pitch)` so we need to make sure this is also part of the direction vector. With this included we get the final direction vector as translated from yaw and pitch Euler angles:
+
+```c++
+direction.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
+direction.y = sin(glm::radians(pitch));
+direction.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
+```
+
+This gives us a formula to convert yaw and pitch values to a 3-dimensional direction vector that we can use for looking around. 
+
+We've set up the scene world so everything's positioned in the direction of the negative z-axis. However, if we look at the `x` and `z` yaw triangle we see that a *θ* of `0` results in the camera's `direction` vector to point towards the positive x-axis. To make sure the camera points towards the negative z-axis by default we can give the `yaw` a default value of a 90 degree clockwise rotation. Positive degrees rotate counter-clockwise so we set the default `yaw` value to:
+
+```c++
+yaw = -90.0f;
+```
+
+You've probably wondered by now: how do we set and modify these yaw and pitch values?
+
+##### Mouse input
+
+The yaw and pitch values are obtained from mouse (or controller/joystick) movement where horizontal mouse-movement affects the yaw and vertical mouse-movement affects the pitch. The idea is to store the last frame's mouse positions and calculate in the current frame how much the mouse values changed. The higher the horizontal or vertical difference, the more we update the pitch or yaw value and thus the more the camera should move. 
+
+First we will tell GLFW that it should hide the cursor and capture it. Capturing a cursor means that, once the application has focus, the mouse cursor stays within the center of the window (unless the application loses focus or quits). We can do this with one simple configuration call:
+
+```c++
+glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED); 
+```
+
+After this call, wherever we move the mouse it won't be visible and it should not leave the window. This is perfect for an FPS camera system.
+
+To calculate the pitch and yaw values we need to tell GLFW to listen to mouse-movement events. We do this by creating a callback function with the following prototype:
+
+```c++
+void mouse_callback(GLFWwindow* window, double xpos, double ypos);
+```
+
+Here xpos and ypos represent the current mouse positions. As soon as we register the callback function with GLFW each time the mouse moves, the mouse_callback function is called:
+
+```c++
+glfwSetCursorPosCallback(window, mouse_callback); 
+```
+
+When handling mouse input for a fly style camera there are several steps we have to take before we're able to fully calculate the camera's direction vector:  
+
+1. Calculate the mouse's offset since the last frame.
+2. Add the offset values to the camera's yaw and pitch values.
+3. Add some constraints to the minimum/maximum pitch values.
+4. Calculate the direction vector.
+
+The first step is to calculate the offset of the mouse since last frame. We first have to store the last mouse positions in the application, which we initialize to be in the center of the screen (screen size is `800` by `600`) initially:
+
+```c++
+float lastX = 400, lastY = 300;
+```
+
+Then in the mouse's callback function we calculate the offset movement between the last and current frame:
+
+```c++
+float xoffset = xpos - lastX;
+float yoffset = lastY - ypos; // reversed since y-coordinates range from bottom to top
+lastX = xpos;
+lastY = ypos;
+
+const float sensitivity = 0.1f;
+xoffset *= sensitivity;
+yoffset *= sensitivity;
+```
+
+Note that we multiply the offset values by a sensitivity value. If we omit this multiplication the mouse movement would be way too strong; fiddle around with the sensitivity value to your liking.
+
+Next we add the offset values to the globally declared pitch and yaw values:
+
+```c++
+yaw  += xoffset;
+pitch += yoffset; 
+```
+
+In the third step we'd like to add some constraints to the camera so users won't be able to make weird camera movements (also causes a LookAt flip once direction vector is parallel to the world up direction). The pitch needs to be constrained in such a way that users won't be able to look higher than `89` degrees (at `90` degrees we get the LookAt flip) and also not below `-89` degrees. This ensures the user will be able to look up to the sky or below to his feet but not further. The constraints work by replacing the Euler value with its constraint value whenever it breaches the constraint:
+
+```c++
+if(pitch > 89.0f)
+  pitch =  89.0f;
+if(pitch < -89.0f)
+  pitch = -89.0f;
+```
+
+Note that we set no constraint on the yaw value since we don't want to constrain the user in horizontal rotation. However, it's just as easy to add a constraint to the yaw as well if you feel like it.
+
+The fourth and last step is to calculate the actual direction vector using the formula from the previous section:
+
+```c++
+glm::vec3 direction;
+direction.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
+direction.y = sin(glm::radians(pitch));
+direction.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
+cameraFront = glm::normalize(direction);
+```
+
+This computed direction vector then contains all the rotations calculated from the mouse's movement. Since the cameraFront vector is already included in glm's lookAt function we're set to go.
+
+If you'd now run the code you'll notice the camera makes a large sudden jump whenever the window first receives focus of your mouse cursor. The cause for this sudden jump is that as soon as your cursor enters the window the mouse callback function is called with an xpos and ypos position equal to the location your mouse entered the screen from. This is often a position that is significantly far away from the center of the screen, resulting in large offsets and thus a large movement jump. We can circumvent this issue by defining a global `bool` variable to check if this is the first time we receive mouse input. If it is the first time, we update the initial mouse positions to the new xpos and `ypos` values. The resulting mouse movements will then use the newly entered mouse's position coordinates to calculate the offsets:
+
+```c++
+if (firstMouse) // initially set to true
+{
+    lastX = xpos;
+    lastY = ypos;
+    firstMouse = false;
+}
+```
+
+ The final code then becomes:
+
+```c++
+void mouse_callback(GLFWwindow* window, double xpos, double ypos)
+{
+    if (firstMouse)
+    {
+        lastX = xpos;
+        lastY = ypos;
+        firstMouse = false;
+    }
+  
+    float xoffset = xpos - lastX;
+    float yoffset = lastY - ypos; 
+    lastX = xpos;
+    lastY = ypos;
+
+    float sensitivity = 0.1f;
+    xoffset *= sensitivity;
+    yoffset *= sensitivity;
+
+    yaw   += xoffset;
+    pitch += yoffset;
+
+    if(pitch > 89.0f)
+        pitch = 89.0f;
+    if(pitch < -89.0f)
+        pitch = -89.0f;
+
+    glm::vec3 direction;
+    direction.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
+    direction.y = sin(glm::radians(pitch));
+    direction.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
+    cameraFront = glm::normalize(direction);
+}  
+```
+
+##### Zoom
+
+As a little extra to the camera system we'll also implement a zooming interface. In the previous chapter we said the *Field of view* or *fov* largely defines how much we can see of the scene. When the field of  view becomes smaller, the scene's projected space gets smaller. This  smaller space is projected over the same NDC, giving the illusion of  zooming in. To zoom in, we're going to use the mouse's scroll wheel.  Similar to mouse movement and keyboard input we have a callback function for mouse scrolling:
+
+```c++
+void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
+{
+    fov -= (float)yoffset;
+    if (fov < 1.0f)
+        fov = 1.0f;
+    if (fov > 45.0f)
+        fov = 45.0f; 
+}
+```
+
+When scrolling, the yoffset value tells us the amount we scrolled vertically. When the scroll_callback function is called we change the content of the globally declared fov variable. Since `45.0` is the default fov value we want to constrain the zoom level between `1.0` and ` 45.0`.
+
+We now have to upload the perspective projection matrix to the GPU each frame, but this time with the fov variable as its field of view:
+
+```c++
+projection = glm::perspective(glm::radians(fov), 800.0f / 600.0f, 0.1f, 100.0f);  
+```
+
+And lastly don't forget to register the scroll callback function:
+
+```c++
+glfwSetScrollCallback(window, scroll_callback); 
+```
+
+And there you have it. We implemented a simple camera system that allows for free movement in a 3D environment.
+
+https://learnopengl.com/video/getting-started/camera_mouse.mp4
+
+[Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/7.3.camera_mouse_zoom/camera_mouse_zoom.cpp)
+
+[My solution](code/07_camera/walk_around/main.cpp)
+
+#### Camera class
+
+In the upcoming chapters we'll always use a camera to easily look around the scenes and see the results from all angles. However, since the camera code can take up a significant amount of space on each chapter we'll abstract its details a little and create our own camera object that does most of the work for us with some neat little extras. Unlike the Shader chapter we won't walk you through creating the camera class, but provide you with the (fully commented) source code if you want to know the inner workings. 
+
+Like the `Shader` object, we define the camera class entirely in a single header file. You can find the camera class [here](https://learnopengl.com/code_viewer_gh.php?code=includes/learnopengl/camera.h); you should be able to understand the code after this chapter. It is advised to at least check the class out once as an example on how you could create your own camera system.
+
+> The camera system we introduced is a fly like camera that suits most purposes and works well with Euler angles, but be careful when creating different camera systems like an FPS camera, or a flight simulation camera. Each camera system has its own tricks and quirks so be sure to read up on them. For example, this fly camera doesn't allow for pitch values higher than or equal to `90` degrees and a static up vector of `(0,1,0)` doesn't work when we take roll values into account. 
+
+The updated version of the source code using the new camera object can be found [here](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/7.4.camera_class/camera_class.cpp).
+
+#### Exercises
+
+- See if you can transform the camera class in such a way that it becomes a **true** fps camera where you cannot fly; you can only look around while staying on the `xz` plane: [Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/7.5.camera_exercise1/camera_exercise1.cpp). [My solution](code/07_camera/ex_1/camera.h)
+- Try to create your own LookAt function where you manually create a view matrix as discussed at the start of this chapter. Replace glm's LookAt function with your own implementation and see if it still acts the same: [Official solution](https://learnopengl.com/code_viewer_gh.php?code=src/1.getting_started/7.6.camera_exercise2/camera_exercise2.cpp). [My solution](code/07_camera/ex_2/main.cpp)
+
+### Review
+
+- `OpenGL`: a formal specification of a graphics API that defines the layout and output of each function. 
+- `GLAD`: an extension loading library that loads and sets all OpenGL's function pointers for us so we can use all (modern) OpenGL's functions.  
+- `Viewport`: the 2D window region where we render to. 
+- `Graphics Pipeline`: the entire process vertices have to walk through before ending up as one or more pixels on the screen. 
+- `Shader`: a small program that runs on the graphics card. Several stages of the graphics pipeline can use user-made shaders to replace existing functionality.
+- `Vertex`: a collection of data that represent a single point. 
+- `Normalized Device Coordinates`: the coordinate system your vertices end up in after perspective division is performed on clip coordinates. All vertex positions in NDC between `-1.0` and `1.0` will not be discarded or clipped and end up visible. 
+- `Vertex Buffer Object`: a buffer object that allocates memory on the GPU and stores all the vertex data there for the graphics card to use. 
+- `Vertex Array Object`: stores buffer and vertex attribute state information.
+- `Element Buffer Object`: a buffer object that stores indices on the GPU for indexed drawing. 
+- `Uniform`: a special type of GLSL variable that is global (each shader in a shader program can access this uniform variable) and only has to be set once.  
+- `Texture`: a special type of image used in shaders and usually wrapped around objects, giving the illusion an object is extremely detailed. 
+- `Texture Wrapping`: defines the mode that specifies how OpenGL should sample textures when texture coordinates are outside the range: (`0`, `1`). 
+- `Texture Filtering`: defines the mode that specifies how OpenGL should sample the texture when there are several texels (texture pixels) to choose from. This usually occurs when a texture is magnified. 
+- `Mipmaps`: stored smaller versions of a texture where the appropriate sized version is chosen based on the distance to the viewer. 
+- `stb_image`: image loading library. 
+- `Texture Units`: allows for multiple textures on a single shader program by binding multiple textures, each to a different texture unit. 
+- `Vector`: a mathematical entity that defines directions and/or positions in any dimension. 
+- `Matrix`: a rectangular array of mathematical expressions with useful transformation properties. 
+- `GLM`: a mathematics library tailored for OpenGL. 
+- `Local Space`: the space an object begins in. All coordinates relative to an object's origin. 
+- `World Space`: all coordinates relative to a global origin. 
+- `View Space`: all coordinates as viewed from a camera's perspective. 
+- `Clip Space`: all coordinates as viewed from the camera's perspective but with projection applied. This is the space the vertex coordinates should end up in, as output of the vertex shader. OpenGL does the rest (clipping/perspective division). 
+- `Screen Space`: all coordinates as viewed from the screen. Coordinates range from `0` to screen width/height. 
+- `LookAt`: a special type of view matrix that creates a coordinate system where all coordinates are rotated and translated in such a way that the user is looking at a given target from a given position. 
+- `Euler Angles`: defined as `yaw`, `pitch` and `roll` that allow us to form any 3D direction vector from these 3 values.
 
 ## Model Loading
 

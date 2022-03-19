@@ -6,19 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/home/wenboji/OpenGL_Notebook/code/glad.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-glad/glad.h
--
-windows.h
--
-winapifamily.h
--
-dlfcn.h
--
-
